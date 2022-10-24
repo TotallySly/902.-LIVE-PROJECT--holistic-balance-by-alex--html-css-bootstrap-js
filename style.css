@@ -3,7 +3,6 @@
 
 :root {
     --main-colour: rgba(252, 248, 232);
-    --second-colour: #e38b29;
     --heading-colour: rgba(66, 95, 87);
 }
 
@@ -38,9 +37,21 @@ body {
 }
 
 .navbar-brand {
-    font-size: 4rem;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    letter-spacing: 3px;
     color: var(--main-colour);
+    padding-left: 0.3rem;
+}
+
+.main-logo-letters {
+    font-size: 4rem;
+}
+
+.slogan {
+    font-size: 2rem;
+    text-align: end;
+    margin-top: -1.5rem;
+    letter-spacing: 3px;
 }
 
 .nav-link {
