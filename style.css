@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+:root {
+    --main-colour: rgba(252, 248, 232);
+    --second-colour: #e38b29;
+    --heading-colour: rgba(66, 95, 87);
+}
+
+/* 
+****************************************************************
+                Main Styling - Start - All Devices
+****************************************************************
+*/
+
+body {
+    font-family: 'Zen Loop', cursive;
+    color: black;
+    background-color: var(--main-colour);
+}
+
+/* 
+****************************************************************
+                Main Styling - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Navigation Bar - Start - All Devices
+****************************************************************
+*/
+
+.navbar {
+    background-color: var(--heading-colour);
+    font-size: 1.8rem;
+    width: 100vw;
+}
+
+.navbar-brand {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: var(--main-colour);
+}
+
+.nav-link {
+    color: var(--main-colour);
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-colour);
+    transform: scale(0, 1);
+    transition: transform 0.7s ease;
+}
+
+.nav-link:hover {
+    color: var(--main-colour);
+    font-weight: bold;
+}
+
+.active::after {
+    background-color: var(--heading-colour);
+}
+
+/* 
+****************************************************************
+                Navigation Bar - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Hero Image - Start - All Devices
+****************************************************************
+*/
+
+.container-fluid-hero-img-md {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 1rem;
+    width: 100vw;
+}
+
+.bkground-img-md {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/images/website-images/yoga-pose-marmaid-on-rock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-me-sm {
+    background-color: var(--main-colour);
+}
+
+/* 
+****************************************************************
+                Hero Image - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                About Me - Start - All Devices
+****************************************************************
+*/
+
+.about-me-heading {
+    font-size: 4rem;
+    font-family: 'Oooh Baby', cursive;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--main-colour);
+    color: var(--heading-colour);
+}
+
+/* 
+****************************************************************
+                About Me - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                About Me - Start - Mobile and Tablet
+****************************************************************
+*/
+
+.about-me-bkground-sm {
+    background-color: var(--main-colour);
+}
+
+.cursive-about-me-text-sm {
+    font-size: 1.8rem;
+    font-family: 'Oooh Baby', cursive;
+    margin-top: 3rem;
+}
+
+.main-about-me-text-sm {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.btm-about-me-img-sm {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    background-image: url('../assets/images/website-images/childs-pose-test.png');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.blend-background-sm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(252, 248, 232, 1), rgba(252, 248, 232, 0));
+}
+
+/* 
+****************************************************************
+                About Me - End - Mobile and Tablets
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                About Me - Start - Desktop
+****************************************************************
+*/
+
+.cursive-about-me-text-lg {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    font-family: 'Oooh Baby', cursive;
+    font-size: 1.8rem;
+}
+
+.main-about-me-text-lg {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 1.6rem;
+}
+
+.btm-about-me-img-lg {
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    background-image: url('../assets/images/website-images/childs-pose-test.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.blend-background-sm {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(252, 248, 232, 1), rgba(252, 248, 232, 0));
+}
+
+.about-me-colour {
+    background-color: var(--main-colour);
+}
+
+/* 
+****************************************************************
+                About Me - End - Desktop
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Classes - Start - All Devices
+****************************************************************
+*/
+
+#classes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    margin-bottom: 5rem;
+    background-color: var(--heading-colour);
+    color: var(--main-colour);
+}
+
+.yoga-classes-container {
+    font-size: 1.5rem;
+}
+
+.size-image {
+    height: 12rem;
+    width: 17rem;
+}
+
+.card > img {
+    margin-top: 1rem;
+    border: solid 1px white;
+}
+
+.card-body > h5 {
+    font-size: 1.7rem;
+}
+
+.btn {
+    background-color: var(--main-colour);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+/* 
+****************************************************************
+                Classes - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Events - Start - All Devices
+****************************************************************
+*/
+
+#events {
+    font-size: 5rem;
+    font-family: 'Oooh Baby', cursive;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--main-colour);
+    color: var(--heading-colour);
+}
+
+/* 
+****************************************************************
+                Events - Start - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Events - Start - Mobile and Tablets
+****************************************************************
+*/
+
+.events-bkground-img-sm {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    background-image: url('../assets/images/website-images/yoga-pose-on-rock-sunset.png');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.glass-sm {
+    padding: 0.5em;
+    position: absolute;
+    bottom: 100;
+    left: 20;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    color: var(--main-colour);
+    font-size: 1.8rem;
+}
+
+/* 
+****************************************************************
+                Events - End - Mobile and Tablets
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Events - Start - Desktop
+****************************************************************
+*/
+
+.events-bkground-img {
+    position: relative;
+    height: 100vh;
+    background-color: pink;
+    background-image: url('../assets/images/website-images/yoga-pose-on-rock-sunset-two.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.glass {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 35rem;
+    z-index: 2;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    background-color: rgba(252, 248, 232, 0.5);
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    text-align: center;
+}
+
+/* 
+****************************************************************
+                Events - End - Desktop
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Contact Me - Start - Tablet and Desktop
+****************************************************************
+*/
+
+.offerings-heading {
+    font-size: 5rem;
+    font-family: 'Oooh Baby', cursive;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--heading-colour);
+    z-index: 10;
+    position: relative;
+}
+
+/* 
+****************************************************************
+                Contact Me - Start - Mobile
+***************************************************************
+*/
+
+.offerings-text-container-transform-sm {
+    margin-top: 5rem;
+    transform: scaleX(1);
+    margin-left: -5rem;
+}
+
+.offerings-text-2-sm {
+    padding-bottom: 2rem;
+}
+
+/* 
+****************************************************************
+                Contact Me - Start - Tablet and Desktop
+****************************************************************
+*/
+
+.contact-bkground-img {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/images/website-images/yoga-pose-at-home-arm-stretch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    box-shadow: 0px 0px 20px 20px #fcf8e8 inset;
+}
+
+.blend-background-lg-right {
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(252, 248, 232, 1), rgba(252, 248, 232, 1), rgba(252, 248, 232, 0.99), rgba(252, 248, 232, 0.7), rgba(252, 248, 232, 0));
+    width: 75%;
+    height: 100%;
+}
+
+.offerings-text-container {
+    font-size: 1.6rem;
+}
+
+.offerings-text-container-transform-lg {
+    transform: scaleX(-1);
+    margin-right: 1.5rem;
+    margin-top: 15rem;
+}
+
+.offerings-text {
+    padding-bottom: 2rem;
+}
+
+.offerings-text-2 {
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+.offerings-text-container > a {
+    text-decoration: none;
+    color: var(--heading-colour);
+}
+
+.offerings-text-container > a:hover {
+    font-weight: bold;
+}
+
+/* 
+****************************************************************
+                Contact Me - End - Tablet and Desktop
+****************************************************************
+*/
