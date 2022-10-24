@@ -94,7 +94,7 @@ body {
 .bkground-img-md {
     height: 100vh;
     width: 100%;
-    background-image: url('../assets/images/website-images/yoga-pose-marmaid-on-rock.png');
+    background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -157,7 +157,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: pink;
-    background-image: url('../assets/images/website-images/childs-pose-test.png');
+    background-image: url('./assets/website-images/childs-pose.png');
     background-size: cover;
     background-position: center center;
     position: relative;
