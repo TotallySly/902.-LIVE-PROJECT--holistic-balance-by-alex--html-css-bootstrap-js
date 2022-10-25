@@ -33,12 +33,14 @@ body {
 
 .navbar {
     background-color: var(--secondary-colour);
+    letter-spacing: 0.1rem;
 }
 
 .navbar-brand {
     font-size: 3rem;
     padding-left: 0.5rem;
     color: var(--main-colour);
+    margin-top: -1.5rem;
 }
 
 .navbar-brand-bigger-letter {
@@ -49,6 +51,15 @@ body {
     font-size: 2rem;
     text-align: right;
     margin-top: -2rem;
+}
+
+.navbar-nav {
+    text-transform: upper case;
+}
+
+.nav-item {
+    padding-right: 5rem;
+    padding-left: 1rem;
 }
 
 /* 
