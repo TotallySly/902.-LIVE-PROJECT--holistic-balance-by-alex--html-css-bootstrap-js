@@ -3,7 +3,7 @@
 
 :root {
     --main-colour: rgba(252, 248, 232);
-    --heading-colour: rgba(66, 95, 87);
+    --secondary-colour: rgba(66, 95, 87);
 }
 
 /* 
@@ -16,4 +16,43 @@ body {
     font-family: 'Zen Loop', cursive;
     color: black;
     background-color: var(--main-colour);
+    font-size: 1.8rem;
 }
+
+/* 
+****************************************************************
+                Main Styling - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Nav Bar- Start - All Devices
+****************************************************************
+*/
+
+.navbar {
+    background-color: var(--secondary-colour);
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    padding-left: 0.5rem;
+    color: var(--main-colour);
+}
+
+.navbar-brand-bigger-letter {
+    font-size: 4.5rem;
+}
+
+.slogan {
+    font-size: 2rem;
+    text-align: right;
+    margin-top: -2rem;
+}
+
+/* 
+****************************************************************
+                Nav Bar- End - All Devices
+****************************************************************
+*/
