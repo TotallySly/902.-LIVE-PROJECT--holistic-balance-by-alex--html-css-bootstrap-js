@@ -65,11 +65,31 @@ body {
 
 .nav-link {
     color: var(--main-colour);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--main-colour);
+    font-weight: bold;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.dropdown-menu {
+    background-color: var(--secondary-colour);
 }
 
 .dropdown-item {
-    background-color: var(--secondary-colour);
     color: var(--main-colour);
+    letter-spacing: 2px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--main-colour);
+    font-weight: bold;
 }
 
 /* 
