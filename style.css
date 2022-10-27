@@ -19,6 +19,14 @@ body {
     font-size: 1.8rem;
 }
 
+.row {
+    border: solid 2px red;
+}
+
+.col {
+    border: solid 2px blue;
+}
+
 /* 
 ****************************************************************
                 Main Styling - End - All Devices
@@ -104,26 +112,18 @@ body {
 ****************************************************************
 */
 
-.carousel-item {
-    height: 100vh;
-}
-
 .carousel-caption {
     position: absolute;
     top: 100;
 }
 
-.slide-one-img {
-    margin-top: -7rem;
-}
-
 .slide-one-text {
-    color: var(--main-colour);
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
     letter-spacing: 2px;
 }
 
 .slide-two-img {
-    margin-top: -10rem;
     opacity: 0.5;
 }
 
