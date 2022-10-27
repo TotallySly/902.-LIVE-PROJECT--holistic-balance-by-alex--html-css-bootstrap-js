@@ -108,7 +108,33 @@ body {
     height: 100vh;
 }
 
-.carousel-item img {
+.carousel-caption {
+    position: absolute;
+    top: 100;
+}
+
+.slide-one-img {
+    margin-top: -7rem;
+}
+
+.slide-one-text {
+    color: var(--main-colour);
+    letter-spacing: 2px;
+}
+
+.slide-two-img {
+    margin-top: -10rem;
+    opacity: 0.5;
+}
+
+.other-slides-text {
+    margin-top: 15rem;
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    letter-spacing: 2px;
+}
+
+.slide-three-img {
     opacity: 0.5;
 }
 
