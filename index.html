@@ -10,7 +10,7 @@
         />
         <link rel="icon" href="/assets/favicon/favicon-yoga.png" type="image/x-icon" />
         <!--Boostrap Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
         <!-- Bootstrap CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
         <!-- My CSS -->
@@ -19,20 +19,16 @@
         <title>Yoga with Alex</title>
     </head>
     <body>
-
-
-
-<!-- 
+        <!-- 
 **************************************************************
                     Nav Bar - Start - All Devices
 **************************************************************
 -->
 
-        <nav class="navbar sticky-top navbar-expand-lg">    
+        <nav class="navbar sticky-top navbar-expand-lg">
             <a class="navbar-brand" href="#" id="home">
-                    <span class="navbar-brand-bigger-letter">H</span><span>olistic</span> 
-                    <span class="navbar-brand-bigger-letter">B</span><span>alance</span>
-                    <div class="slogan">By Alex</div>
+                <span class="navbar-brand-bigger-letter">H</span><span>olistic</span> <span class="navbar-brand-bigger-letter">B</span><span>alance</span>
+                <div class="slogan">By Alex</div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,19 +67,57 @@
             </div>
         </nav>
 
-<!-- 
+        <!-- 
 **************************************************************
                     Nav Bar - End - All Devices
 **************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Hero Image - Start - All Devices
 **************************************************************
 -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <div class="slide-overlay-image-one" style="background-image: url('assets/website-images/websitelogo.png')"></div>
+                    <div class="container carousel-container">
+                        <h1>Slide One</h1>
+                        <p>This is Slide One</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <div class="slide-overlay-image-two" style="background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png')"></div>
+                    <div class="container carousel-container">
+                        <h1>Slide Two</h1>
+                        <p>This is Slide Two</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <div class="slide-overlay-image-three" style="background-image: url('assets/website-images/massage-boilerplate-img.png')"></div>
+                    <div class="container carousel-container">
+                        <h1>Slide Three</h1>
+                        <p>This is Slide Three</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-        <section class="hero-image">
+        <!-- <section class="hero-image">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,8 +125,8 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-<!-- 
+                    <div class="carousel-item active"> -->
+        <!-- 
 **************************************************************
 TODO
         Better logo image. One that isn't pixelated (!!!!!!!!!!!!! USE NEGATIVE MARGINS TO MOVE THE IMAGE !!!!!!!!!)
@@ -107,7 +141,7 @@ TODO
 **************************************************************
 -->
 
-                        <img src="assets/website-images/websitelogo.png" class="d-block w-100  slide-one-img" alt="...">
+        <!-- <img src="assets/website-images/websitelogo.png" class="d-block w-100  slide-one-img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <p class="slide-one-text">Welcome to Holistic Balance by Alex</p>
                             <p class="slide-one-text">I wish you a peaceful visit.</p>
@@ -137,38 +171,37 @@ TODO
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
+        </section> -->
 
-
-<!-- 
+        <!-- 
 **************************************************************
                     Hero Image - End - All Devices
 **************************************************************
 -->
 
-<!--
+        <!--
  ****************************************************************************************************************************
                     Navigation ID - Start - All Devices
 ****************************************************************************************************************************
 -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col text-center about-me-heading" id="aboutme">Hej! I'm Alex</div>
-        </div>
+        </div> -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - End - All Devices
 ****************************************************************************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     About Me - Start - Mobile and Tablets
 **************************************************************
 -->
 
-        <section class="g-0 d-lg-none about-me-bkground-sm">
+        <!-- <section class="g-0 d-lg-none about-me-bkground-sm">
             <div class="row">
                 <div class="col text-center">
                     <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="about-me-img-mobile img-fluid" />
@@ -187,21 +220,21 @@ TODO
             <section class="btm-about-me-img-sm w-100">
                 <div class="blend-background-sm w-100"></div>
             </section>
-        </section>
+        </section> -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     About Me - End - Mobile and Tablets
 **************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     About Me - Start - Desktop
 **************************************************************
 -->
 
-        <section class="about-me-lg d-none d-lg-block about-me-colour">
+        <!-- <section class="about-me-lg d-none d-lg-block about-me-colour">
             <div class="row">
                 <div class="col">
                     <img src="" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="img-fluid" />
@@ -218,37 +251,37 @@ TODO
         </section>
         <section class="btm-about-me-img-lg w-100 d-none d-lg-block">
             <div class="blend-background-sm w-100"></div>
-        </section>
+        </section> -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     About Me - End - Desktop
 **************************************************************
 -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - Start - All Devices
 ****************************************************************************************************************************
 -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col text-center about-me-heading" id="classes">Classes</div>
-        </div>
+        </div> -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - End - All Devices
 ****************************************************************************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Classes - Start - All Devices
 **************************************************************
 -->
 
-        <section class="container yoga-classes-container text-center">
+        <!-- <section class="container yoga-classes-container text-center">
             <div class="row d-flex justify-content-around">
                     <div class="card d-flex align-items-center" style="width: 18rem">
                         <img src="" class="card-img-top size-image" alt="..." />
@@ -296,92 +329,91 @@ TODO
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Classes - End - All Devices
 **************************************************************
 -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - Start - All Devices
 ****************************************************************************************************************************
 -->
-
+        <!-- 
         <div class="row">
             <div class="col text-center" id="events">Events</div>
-        </div>
+        </div> -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - End - All Devices
 ****************************************************************************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Events - Start - Mobile and Tablets
 **************************************************************
 -->
 
-        <section class="events-bkground-img-sm blend-background-sm d-lg-none">
+        <!-- <section class="events-bkground-img-sm blend-background-sm d-lg-none">
             <div class="blend-background-sm"></div>
             <div class="text-center glass-sm">
                 <p>Upcoming events will be announced here...</p>
             </div>
-        </section>
-        
+        </section> -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Events - End - Mobile and Tablets
 **************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Events - Start - Desktop
 **************************************************************
 -->
-
+        <!-- 
         <section class="events-bkground-img blend-background-sm d-none d-lg-block">
             <div class="blend-background-sm"></div>
             <div class="text-center glass">
                 <p>Upcoming events will be announced here...</p>
             </div>
-        </section>
+        </section> -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Events - End - Desktop
 **************************************************************
 -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - Start - All Devices
 ****************************************************************************************************************************
 -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col text-center about-me-heading" id="myOfferings">My Offerings</div>
-        </div>
+        </div> -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Navigation ID - End - All Devices
 ****************************************************************************************************************************
 -->
 
-<!--
+        <!--
 ****************************************************************************************************************************
                     Contact Me - Start - Mobile Devices
 ****************************************************************************************************************************
 -->
 
-    <section class=".d-none d-sm-block d-md-none">
+        <!-- <section class=".d-none d-sm-block d-md-none">
         <div class="blend-background-lg-right">
             <div class="offerings-text-container offerings-text-container-transform-sm">
                 <div class="offerings-text">I am a certified Yoga Alliance and Global Yoga teacher.</div>
@@ -392,16 +424,15 @@ TODO
                     </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
-
-<!--
+        <!--
 ****************************************************************************************************************************
                     Contact Me - End - Mobile Devices
 ****************************************************************************************************************************
 -->
 
-<!-- 
+        <!-- 
 **************************************************************
                     Contact Me - Start - Tablet and Desktop
 **************************************************************
@@ -411,7 +442,7 @@ TODO
 TRY AND ADD A SECOND GRADIENT GOING DOWN SO THE IMAGE ISN'T SO BLOCK LIKE
 -->
 
-        <div class="blend-bkground-top"></div>
+        <!-- <div class="blend-bkground-top"></div>
         <section class="contact-bkground-img d-none d-md-block">
                 <div class="blend-background-lg-right">
                     <div class="offerings-text-container offerings-text-container-transform-lg">
@@ -423,18 +454,13 @@ TRY AND ADD A SECOND GRADIENT GOING DOWN SO THE IMAGE ISN'T SO BLOCK LIKE
                             </a>
                     </div>
                 </div>
-        </section>
+        </section> -->
 
-
-<!-- 
+        <!-- 
 **************************************************************
                     Contact Me - End - Tablet and Desktop End
 **************************************************************
 -->
-
-
-
-
 
         <!-- Bootstrap JavaScript Bundle with Popper -->
         <script src="script.js"></script>

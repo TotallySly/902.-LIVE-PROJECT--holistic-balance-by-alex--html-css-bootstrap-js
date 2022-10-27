@@ -112,7 +112,56 @@ body {
 ****************************************************************
 */
 
-.carousel-caption {
+.carousel-item {
+    height: 45rem;
+    background-color: #000;
+    color: var(--main-colour);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 5rem;
+}
+
+.slide-overlay-image-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-overlay-image-two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.slide-overlay-image-three {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+/* .carousel-caption {
     position: absolute;
     top: 100;
 }
@@ -136,7 +185,7 @@ body {
 
 .slide-three-img {
     opacity: 0.5;
-}
+} */
 
 /* 
 ****************************************************************
