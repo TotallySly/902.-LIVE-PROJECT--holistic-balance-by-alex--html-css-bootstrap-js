@@ -12,6 +12,10 @@ Main Styling - Start - All Devices
 ****************************************************************
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Zen Loop', cursive;
     color: black;
