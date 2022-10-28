@@ -19,6 +19,11 @@ body {
     font-size: 1.8rem;
 }
 
+.cursive-text {
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 2px;
+}
+
 .row {
     border: solid 2px red;
 }
@@ -187,3 +192,33 @@ Main Styling - End - All Devices
                 Hero Image- End - All Devices (????)
 ****************************************************************
 */
+
+/* 
+****************************************************************
+                About Me - Start - All Devices (????)
+****************************************************************
+*/
+
+.about-me-small {
+    text-align: center;
+}
+
+.about-me-intro {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.about-me-paragraphs {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+.btm-about-me-img {
+    height: 70vh;
+    background-image: url('/assets/website-images/childs-pose.png');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-colour);
+}
