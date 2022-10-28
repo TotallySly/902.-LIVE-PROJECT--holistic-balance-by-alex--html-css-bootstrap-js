@@ -8,7 +8,7 @@
 
 /* 
 ****************************************************************
-                Main Styling - Start - All Devices
+Main Styling - Start - All Devices
 ****************************************************************
 */
 
@@ -29,7 +29,28 @@ body {
 
 /* 
 ****************************************************************
-                Main Styling - End - All Devices
+Main Styling - End - All Devices
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Headings - Start - All Devices
+****************************************************************
+*/
+
+#aboutMe {
+    font-family: 'Oooh Baby', cursive;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* 
+****************************************************************
+                Headings - End - All Devices
 ****************************************************************
 */
 
@@ -161,34 +182,8 @@ body {
     opacity: 0.5;
 }
 
-/* .carousel-caption {
-    position: absolute;
-    top: 100;
-}
-
-.slide-one-text {
-    background-color: var(--main-colour);
-    color: var(--secondary-colour);
-    letter-spacing: 2px;
-}
-
-.slide-two-img {
-    opacity: 0.5;
-}
-
-.other-slides-text {
-    margin-top: 15rem;
-    color: var(--secondary-colour);
-    background-color: var(--main-colour);
-    letter-spacing: 2px;
-}
-
-.slide-three-img {
-    opacity: 0.5;
-} */
-
 /* 
 ****************************************************************
                 Hero Image- End - All Devices (????)
 ****************************************************************
-*/ ;
+*/
