@@ -21,11 +21,11 @@ body {
     color: black;
     background-color: var(--main-colour);
     font-size: 1.8rem;
+    letter-spacing: 2px;
 }
 
 .cursive-text {
     font-family: 'Oooh Baby', cursive;
-    letter-spacing: 2px;
 }
 
 .reveal {
@@ -60,11 +60,10 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-#aboutMe {
+#headingTitle {
     font-family: 'Oooh Baby', cursive;
     text-align: center;
     font-size: 3rem;
-    letter-spacing: 2px;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -116,7 +115,6 @@ Main Styling - End - All Devices
 .nav-link {
     color: var(--main-colour);
     font-weight: 500;
-    letter-spacing: 2px;
 }
 
 .nav-link:hover {
@@ -134,7 +132,6 @@ Main Styling - End - All Devices
 
 .dropdown-item {
     color: var(--main-colour);
-    letter-spacing: 2px;
 }
 
 .dropdown-item:hover {
@@ -211,7 +208,7 @@ Main Styling - End - All Devices
 
 /* 
 ****************************************************************
-                About Me - Start - All Devices (????)
+                About Me - Start - Mobile and Tablets
 ****************************************************************
 */
 
@@ -227,17 +224,48 @@ Main Styling - End - All Devices
 .about-me-paragraphs {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    letter-spacing: 2px;
 }
+
+/* 
+****************************************************************
+                About Me - End - Mobile and Tablets
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                About Me - Start - Laptops
+****************************************************************
+*/
+
+.about-me-big {
+    text-align: center;
+}
+
+/* 
+****************************************************************
+                About Me - End - Laptops
+****************************************************************
+*/
+
+/* 
+****************************************************************
+                Massage - Start - All Devices????+
+****************************************************************
+*/
 
 .btm-about-me-img {
     margin-top: 5rem;
     height: 70vh;
-    background-image: url('/assets/website-images/childs-pose.png');
+    background-image: url('assets/website-images/stock-massage-img.jpg');
     position: relative;
     background-position: center;
     background-size: cover;
     background-color: var(--main-colour);
+}
+
+.larger-img {
+    height: 100vh;
 }
 
 .btm-about-me-img-blend {
@@ -246,3 +274,32 @@ Main Styling - End - All Devices
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(252, 248, 232, 1), rgba(252, 248, 232, 0));
 }
+
+.cards-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    background-color: var(--main-colour);
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cards > h1 {
+    text-transform: uppercase;
+}
+
+/* 
+****************************************************************
+                Massage - End - All Devices????+
+****************************************************************
+*/
