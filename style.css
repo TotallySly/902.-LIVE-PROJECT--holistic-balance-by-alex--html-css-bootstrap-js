@@ -68,6 +68,13 @@ Main Styling - End - All Devices
     padding-bottom: 5rem;
 }
 
+.smaller-heading-title {
+    font-family: 'Oooh Baby', cursive;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 /* 
 ****************************************************************
                 Headings - End - All Devices
@@ -254,18 +261,17 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
+.massage-info {
+    text-align: center;
+}
+
 .btm-about-me-img {
-    margin-top: 5rem;
-    height: 70vh;
+    height: 100vh;
     background-image: url('assets/website-images/stock-massage-img.jpg');
     position: relative;
     background-position: center;
     background-size: cover;
     background-color: var(--main-colour);
-}
-
-.larger-img {
-    height: 100vh;
 }
 
 .btm-about-me-img-blend {
@@ -290,7 +296,7 @@ Main Styling - End - All Devices
 .cards {
     background-color: var(--main-colour);
     margin: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
 }
 
