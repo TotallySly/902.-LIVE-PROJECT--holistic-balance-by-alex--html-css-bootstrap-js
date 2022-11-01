@@ -182,7 +182,7 @@ Main Styling - End - All Devices
     left: 0;
     top: 0;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .slide-overlay-image-two {
@@ -302,6 +302,24 @@ Main Styling - End - All Devices
 
 .cards > h1 {
     text-transform: uppercase;
+}
+
+.address-card-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.address-card {
+    background-color: var(--main-colour);
+    margin: 2rem;
+    padding: 2rem;
 }
 
 /* 
