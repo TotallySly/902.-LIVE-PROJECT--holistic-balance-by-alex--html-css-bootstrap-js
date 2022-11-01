@@ -4,6 +4,7 @@
 :root {
     --main-colour: rgba(252, 248, 232);
     --secondary-colour: rgba(66, 95, 87);
+    --tertiary-colour: rgba(164, 195, 178);
 }
 
 /* 
@@ -22,6 +23,12 @@ body {
     background-color: var(--main-colour);
     font-size: 1.8rem;
     letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-weight: bold;
 }
 
 .cursive-text {
@@ -313,13 +320,13 @@ Main Styling - End - All Devices
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    text-align: center;
 }
 
 .address-card {
     background-color: var(--main-colour);
     margin: 2rem;
     padding: 2rem;
+    text-align: center;
 }
 
 /* 
