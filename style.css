@@ -4,7 +4,7 @@
 :root {
     --main-colour: rgba(252, 248, 232);
     --secondary-colour: rgba(66, 95, 87);
-    --tertiary-colour: rgba(164, 195, 178);
+    --tertiary-colour: rgba(249, 240, 210);
 }
 
 /* 
@@ -45,14 +45,6 @@ h2 {
 .reveal.activeScroll {
     transform: translateY(0px);
     opacity: 1;
-}
-
-.row {
-    border: solid 2px red;
-}
-
-.col {
-    border: solid 2px blue;
 }
 
 /* 
@@ -226,20 +218,6 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-.about-me-small {
-    text-align: center;
-}
-
-.about-me-intro {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-}
-
-.about-me-paragraphs {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 /* 
 ****************************************************************
                 About Me - End - Mobile and Tablets
@@ -252,8 +230,11 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-.about-me-big {
-    text-align: center;
+.about-me-paragraph-containers {
+    background-color: var(--tertiary-colour);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* 

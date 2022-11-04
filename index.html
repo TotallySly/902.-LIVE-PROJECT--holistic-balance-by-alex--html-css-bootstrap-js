@@ -94,7 +94,6 @@ TODO
         Refactor repeated CSS code (slide-overlay-image-two/three)
 **************************************************************
 -->
-
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -103,7 +102,7 @@ TODO
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="2000">
-                    <div class="slide-overlay-image-one" style="background-image: url('assets/website-images/website-logo.png')"></div>
+                    <div class="slide-overlay-image-one" style="background-image: url('assets/website-images/website-logo.png'); background-repeat: no-repeat; background-size: cover"></div>
                     <div class="container carousel-container">
                         <h1>Slide One</h1>
                         <p>This is Slide One</p>
@@ -169,21 +168,27 @@ TODO
 **************************************************************
 -->
 
-        <section class="d-lg-none about-me-small">
+        <section class="d-lg-none container-fluid text-center">
             <div class="row g-0">
                 <div class="col reveal">
-                    <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="about-me-img-mobile img-fluid" />
+                    <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="img-fluid rounded-3" />
                 </div>
             </div>
             <div class="row">
-                <div class="col container-fluid">
-                    <div class="cursive-text about-me-intro reveal">After years of struggling with depression, anxiety and being overstressed by work. I finally had enough, and I turned to yoga.</div>
-                    <div class="about-me-paragraphs reveal">
-                        I was hoping that yoga would help me manage my stress and anxiety but what I found was so much more deeper than that. Having a regular asana and meditation practice helped me to find my way home to myself.
+                <div class="col container-fluid mt-5">
+                    <div class="about-me-paragraph-containers reveal rounded-3">
+                        <div class="cursive-text about-me-intro">After years of struggling with depression, anxiety and being overstressed by work. I finally had enough, and I turned to yoga.</div>
                     </div>
-                    <div class="about-me-paragraphs reveal">
-                        Now I would like to invite you to take a step back and slow down. To move gently and mindfully. With compassion, patience and non-judgement towards ourselves we can start healing whatever needs healing inside of us. I am here
-                        for you, I will hold your hand, wipe the tears and laugh with you.
+                    <div class="about-me-paragraph-containers reveal">
+                        <div class="about-me-paragraphs">
+                            I was hoping that yoga would help me manage my stress and anxiety but what I found was so much more deeper than that. Having a regular asana and meditation practice helped me to find my way home to myself.
+                        </div>
+                    </div>
+                    <div class="about-me-paragraph-containers reveal rounded-3">
+                        <div class="about-me-paragraphs rounded-3">
+                            Now I would like to invite you to take a step back and slow down. To move gently and mindfully. With compassion, patience and non-judgement towards ourselves we can start healing whatever needs healing inside of us. I am
+                            here for you, I will hold your hand, wipe the tears and laugh with you.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,19 +206,25 @@ TODO
 **************************************************************
 -->
 
-        <section class="d-none d-lg-block about-me-big">
+        <section class="d-none d-lg-block text-center container-fluid">
             <div class="row">
                 <div class="col reveal">
-                    <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="img-fluid" />
+                    <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="img-fluid rounded-3" />
                 </div>
-                <div class="col">
-                    <div class="cursive-text about-me-intro reveal">After years of struggling with depression, anxiety and being overstressed by work. I finally had enough, and I turned to yoga.</div>
-                    <div class="about-me-paragraphs reveal">
-                        I was hoping that yoga would help me manage my stress and anxiety but what I found was so much more deeper than that. Having a regular asana and meditation practice helped me to find my way home to myself.
+                <div class="col about-me-text-container">
+                    <div class="about-me-paragraph-containers reveal rounded-3">
+                        <div class="cursive-text about-me-intro">After years of struggling with depression, anxiety and being overstressed by work. I finally had enough, and I turned to yoga.</div>
                     </div>
-                    <div class="about-me-paragraphs reveal">
-                        Now I would like to invite you to take a step back and slow down. To move gently and mindfully. With compassion, patience and non-judgement towards ourselves we can start healing whatever needs healing inside of us. I am here
-                        for you, I will hold your hand, wipe the tears and laugh with you.
+                    <div class="about-me-paragraph-containers reveal rounded-3">
+                        <div class="about-me-paragraphs">
+                            I was hoping that yoga would help me manage my stress and anxiety but what I found was so much more deeper than that. Having a regular asana and meditation practice helped me to find my way home to myself.
+                        </div>
+                    </div>
+                    <div class="about-me-paragraph-containers run reveal rounded-3">
+                        <div class="about-me-paragraphs">
+                            Now I would like to invite you to take a step back and slow down. To move gently and mindfully. With compassion, patience and non-judgement towards ourselves we can start healing whatever needs healing inside of us. I am
+                            here for you, I will hold your hand, wipe the tears and laugh with you.
+                        </div>
                     </div>
                 </div>
             </div>
