@@ -188,13 +188,16 @@ Main Styling - End - All Devices
     background-color: black;
 }
 
-.carousel-container {
+.carousel-container-one {
     position: absolute;
+    bottom: 0;
     right: 0;
-    left: 30rem;
-    bottom: 4rem;
+    left: 0;
+    top: 0;
     background-color: var(--tertiary-colour);
     width: max-content;
+    height: max-content;
+    letter-spacing: 4px;
 }
 
 .slide-overlay-image-one {
