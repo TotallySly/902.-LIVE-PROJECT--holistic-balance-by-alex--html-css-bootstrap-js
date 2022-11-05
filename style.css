@@ -178,80 +178,67 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-.carousel-item {
-    height: 45rem;
+.carousel-container {
+    height: 75vh;
+    background-color: var(--secondary-colour);
+}
+
+.masthead-one {
+    min-height: 75vh;
+    background-image: url('/assets/website-images/website-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     position: relative;
     color: var(--main-colour);
 }
 
-.carousel-item-background {
-    background-color: black;
-}
-
-.carousel-container-one {
+.overlay-one {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-color: var(--tertiary-colour);
     width: max-content;
-    height: max-content;
-    letter-spacing: 4px;
+    background-color: var(--tertiary-colour);;
+    padding: 2rem;
+    top: 66%;
+    left: 20%;
+    background-attachment: fixed;
 }
 
-.slide-overlay-image-one {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-image: url('/assets/website-images/website-logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--secondary-colour);
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 33vh;
+    }
+
+    .masthead-one {
+        min-height: 33vh;
+        background-size: contain;
+    }
 }
 
-.slide-overlay-image-two {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
+.fa-chevron-left {
+    color: var(--tertiary-colour);
+    margin-right: 5rem;
 }
 
-.slide-overlay-image-three {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
+.fa-chevron-right {
+    color: var(--tertiary-colour);
+    margin-left: 5rem;
 }
 
-/* 
-****************************************************************
-                Hero Image- End - All Devices (????)
-****************************************************************
-*/
+.fa-chevron-left:hover{
+    font-weight: bold;
+}
 
-/* 
-****************************************************************
-                About Me - Start - All Devices
-****************************************************************
-*/
+.fa-chevron-right:hover{
+    font-weight: bold;
+}
 
-.about-me-paragraph-containers {
+
+/* **************************************************************** Hero Image- End - All Devices (????) **************************************************************** */ /* **************************************************************** About Me - Start - All Devices **************************************************************** */ .about-me-paragraph-containers {
     background-color: var(--tertiary-colour);
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-}
+
 
 /* 
 ****************************************************************

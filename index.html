@@ -97,43 +97,43 @@ TODO
         Refactor repeated CSS code (slide-overlay-image-two/three)
 **************************************************************
 -->
-        <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container-fluid carousel-container">
+            <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                <!-- Inside Carousel Content-->
+                <div class="carousel-inner">
+                    <!--Carousel One-->
+                    <div class="carousel-item active" data-interval="2000">
+                        <div class="masthead-one">
+                            <div class="overlay-one d-none d-md-block rounded-3">
+                                <h1>A Holistic Balance to life</h1>
+                                <p>Certified Massuse and Yoga</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carousel Two-->
+                    <div class="carousel-item" data-interval="2000">
+                        <div>
+                            <h1>Certified Massuse</h1>
+                            <p>Swedish style massage, for relaxation, deep tissue, or pregnancy</p>
+                        </div>
+                    </div>
+                    <!--Carousel Three-->
+                    <div class="carousel-item" data-interval="2000">
+                        <div>
+                            <h1>Certified Yoga Teacher</h1>
+                            <p>Yoga teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                    <span><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                    <span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="2000">
-                    <div class="slide-overlay-image-one"></div>
-                    <div class="container carousel-container-one rounded-3">
-                        <h1>A Holistic Balance to life</h1>
-                        <p>Certified Massuse and Yoga</p>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-background" data-interval="2000">
-                    <div class="slide-overlay-image-three" style="background-image: url('assets/website-images/massage-boilerplate-img.png')"></div>
-                    <div class="container carousel-container rounded-3">
-                        <h1>Certified Massuse</h1>
-                        <p>Swedish style massage, for relaxation, deep tissue, or pregnancy</p>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-background" data-interval="2000">
-                    <div class="slide-overlay-image-two" style="background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png')"></div>
-                    <div class="container carousel-container rounded-3">
-                        <h1>Certified Yoga Teacher</h1>
-                        <p>Yoga teacher</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
         <!-- 
