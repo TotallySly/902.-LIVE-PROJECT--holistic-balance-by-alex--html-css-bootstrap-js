@@ -31,15 +31,6 @@ h2 {
     font-weight: bold;
 }
 
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: 2px solid var(--main-colour);
-    box-shadow: none;
-}
-
 .cursive-text {
     font-family: 'Oooh Baby', cursive;
 }
@@ -120,6 +111,15 @@ Main Styling - End - All Devices
     border-color: var(--main-colour);
 }
 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: 2px solid var(--main-colour);
+    box-shadow: none;
+}
+
 .fa-bars {
     color: var(--main-colour);
 }
@@ -180,19 +180,21 @@ Main Styling - End - All Devices
 
 .carousel-item {
     height: 45rem;
-    background-color: #000;
-    color: var(--main-colour);
     position: relative;
-    background-position: center;
-    background-size: cover;
+    color: var(--main-colour);
+}
+
+.carousel-item-background {
+    background-color: black;
 }
 
 .carousel-container {
     position: absolute;
-    bottom: 0;
     right: 0;
-    left: 0;
-    padding-bottom: 5rem;
+    left: 30rem;
+    bottom: 4rem;
+    background-color: var(--tertiary-colour);
+    width: max-content;
 }
 
 .slide-overlay-image-one {
@@ -201,8 +203,10 @@ Main Styling - End - All Devices
     right: 0;
     left: 0;
     top: 0;
+    background-image: url('/assets/website-images/website-logo.png');
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-color: var(--secondary-colour);
 }
 
 .slide-overlay-image-two {

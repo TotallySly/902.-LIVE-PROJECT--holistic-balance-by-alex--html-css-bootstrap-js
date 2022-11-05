@@ -97,40 +97,40 @@ TODO
         Refactor repeated CSS code (slide-overlay-image-two/three)
 **************************************************************
 -->
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+        <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="2000">
-                    <div class="slide-overlay-image-one" style="background-image: url('assets/website-images/website-logo.png'); background-repeat: no-repeat; background-size: cover"></div>
+                    <div class="slide-overlay-image-one"></div>
                     <div class="container carousel-container">
-                        <h1>Slide One</h1>
-                        <p>This is Slide One</p>
+                        <h1>A Holistic Balance to life</h1>
+                        <p>Certified Massuse and Yoga</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-interval="2000">
+                <div class="carousel-item carousel-item-background" data-interval="2000">
+                    <div class="slide-overlay-image-three" style="background-image: url('assets/website-images/massage-boilerplate-img.png')"></div>
+                    <div class="container carousel-container rounded-3">
+                        <h1>Certified Massuse</h1>
+                        <p>Swedish style massage, for relaxation, deep tissue, or pregnancy</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-background" data-interval="2000">
                     <div class="slide-overlay-image-two" style="background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png')"></div>
                     <div class="container carousel-container">
-                        <h1>Slide Two</h1>
-                        <p>This is Slide Two</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="2000">
-                    <div class="slide-overlay-image-three" style="background-image: url('assets/website-images/massage-boilerplate-img.png')"></div>
-                    <div class="container carousel-container">
-                        <h1>Slide Three</h1>
-                        <p>This is Slide Three</p>
+                        <h1>Certified Yoga Teacher</h1>
+                        <p>Yoga teacher</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
