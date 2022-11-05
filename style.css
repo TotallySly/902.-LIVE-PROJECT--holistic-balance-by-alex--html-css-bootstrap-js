@@ -181,26 +181,84 @@ Main Styling - End - All Devices
 .carousel-container {
     height: 75vh;
     background-color: var(--secondary-colour);
+    width: 100vw;
 }
 
 .masthead-one {
     min-height: 75vh;
-    background-image: url('/assets/website-images/website-logo.png');
+    width: 100vw;
+    background-image: url('/assets/website-images/massage-boilerplate-img.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
     position: relative;
     color: var(--main-colour);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+    font-size: 4rem;
 }
 
-.overlay-one {
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
     position: absolute;
-    width: max-content;
-    background-color: var(--tertiary-colour);;
-    padding: 2rem;
-    top: 66%;
-    left: 20%;
-    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay > h1 {
+    opacity: 0;
+}
+
+.overlay > p {
+    opacity: 0;
+}
+
+.overlay > h1 {
+    animation: fadeInLeft 1.5s ease forwards;
+}
+
+.overlay > p {
+    animation: fadeInRight 1.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.masthead-two {
+    background-image: url('/assets/website-images/yoga-pose-marmaid-on-rock.png');
+    background-position: center;
+}
+
+.fa-chevron-left {
+    color: var(--main-colour);
+    margin-right: 5rem;
+}
+
+.fa-chevron-right {
+    color: var(--main-colour);
+    margin-left: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -210,35 +268,32 @@ Main Styling - End - All Devices
 
     .masthead-one {
         min-height: 33vh;
-        background-size: contain;
+        font-size: 1.4rem;
     }
 }
 
-.fa-chevron-left {
-    color: var(--tertiary-colour);
-    margin-right: 5rem;
-}
+/* ******************
+Hero Image- End - All Devices (????) ******************************************** */
 
-.fa-chevron-right {
-    color: var(--tertiary-colour);
-    margin-left: 5rem;
-}
+/********************** 
+About Me - Start - All Devices ********************************************** */
 
-.fa-chevron-left:hover{
-    font-weight: bold;
-}
-
-.fa-chevron-right:hover{
-    font-weight: bold;
-}
-
-
-/* **************************************************************** Hero Image- End - All Devices (????) **************************************************************** */ /* **************************************************************** About Me - Start - All Devices **************************************************************** */ .about-me-paragraph-containers {
+.about-me-paragraph-containers {
     background-color: var(--tertiary-colour);
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+}
 
+.lotus-flower {
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--tertiary-colour);
+    font-size: 10rem;
+}
 
 /* 
 ****************************************************************
