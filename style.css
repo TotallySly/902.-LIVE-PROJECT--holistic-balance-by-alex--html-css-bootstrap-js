@@ -263,11 +263,11 @@ Main Styling - End - All Devices
 
 @media (max-width: 768px) {
     .carousel-container {
-        height: 33vh;
+        height: 66vh;
     }
 
     .masthead-one {
-        min-height: 33vh;
+        min-height: 66vh;
         font-size: 1.4rem;
     }
 }
