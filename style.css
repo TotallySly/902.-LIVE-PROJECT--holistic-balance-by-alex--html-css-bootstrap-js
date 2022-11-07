@@ -47,6 +47,12 @@ h2 {
     opacity: 1;
 }
 
+.text-container {
+    background-color: var(--tertiary-colour);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
 /* 
 ****************************************************************
 Main Styling - End - All Devices
@@ -304,10 +310,6 @@ About Me - Start - All Devices ********************************************** */
                 Massage - Start - All Devices????
 ****************************************************************
 */
-
-.massage-info {
-    text-align: center;
-}
 
 .btm-about-me-img {
     height: 100vh;
