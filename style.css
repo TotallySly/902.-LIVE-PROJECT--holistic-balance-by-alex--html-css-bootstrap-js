@@ -53,6 +53,14 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.row {
+    border: solid 1px red;
+}
+
+.col {
+    border: solid 1px blue;
+}
+
 /* 
 ****************************************************************
 Main Styling - End - All Devices
@@ -310,6 +318,57 @@ About Me - Start - All Devices ********************************************** */
                 Massage - Start - All Devices????
 ****************************************************************
 */
+
+.card-container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-container:hover > .card-one {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-one {
+    height: 90%;
+    width: 22vw;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front-one,
+.back-one {
+    background-color: var(--tertiary-colour);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-one {
+    transform: rotateY(180deg);
+}
+
+.card-two {
+    height: 90%;
+    width: 22vw;
+    background-color: blue;
+}
+
+.card-three {
+    height: 90%;
+    width: 22vw;
+    background-color: green;
+}
 
 .btm-about-me-img {
     height: 100vh;
