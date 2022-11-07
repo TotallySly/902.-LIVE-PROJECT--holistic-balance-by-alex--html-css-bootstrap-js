@@ -187,7 +187,7 @@ Main Styling - End - All Devices
 .masthead-one {
     min-height: 75vh;
     width: 100vw;
-    background-image: url('/assets/website-images/massage-boilerplate-img.png');
+    background-image: url('assets/website-images/massage-boilerplate-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -247,7 +247,7 @@ Main Styling - End - All Devices
 }
 
 .masthead-two {
-    background-image: url('/assets/website-images/yoga-pose-marmaid-on-rock.png');
+    background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png');
     background-position: center;
 }
 
