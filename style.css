@@ -326,7 +326,17 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
 }
 
-.card-container:hover > .card-one {
+.card-one-container:hover > .card-one {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-two-container:hover > .card-one {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-three-container:hover > .card-one {
     cursor: pointer;
     transform: rotateY(180deg);
 }
