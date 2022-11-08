@@ -320,12 +320,11 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .card-container {
-    margin-top: 5rem;
-    height: 33vh;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 5rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 .card-one-container:hover > .card-one {
@@ -344,7 +343,6 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .card-one {
-    font-size: 1.4rem;
     height: 20rem;
     width: 20rem;
     padding: 2rem;
@@ -370,8 +368,10 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .back-one {
+    font-size: 1.2rem;
     padding: 2rem;
     transform: rotateY(180deg);
+    margin-right: 4rem;
 }
 
 .card-two {
@@ -382,12 +382,13 @@ About Me - Start - All Devices ********************************************** */
 
 .card-three {
     height: 100%;
-    width: 33vw;
+    min-width: 30rem;
     background-color: green;
 }
 
-@media (max-width: 768px) {
-    .card-container {
+@media (max-width: 798px) {
+    .card-one {
+        margin-bottom: 2rem;
     }
 }
 
