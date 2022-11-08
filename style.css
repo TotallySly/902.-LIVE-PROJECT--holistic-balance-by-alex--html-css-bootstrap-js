@@ -324,6 +324,7 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .card-one-container:hover > .card-one {
@@ -365,25 +366,14 @@ About Me - Start - All Devices ********************************************** */
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateY(0deg);
 }
 
 .back-one {
     font-size: 1.2rem;
     padding: 2rem;
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
     margin-right: 4rem;
-}
-
-.card-two {
-    height: 100%;
-    width: 33vw;
-    background-color: blue;
-}
-
-.card-three {
-    height: 100%;
-    min-width: 30rem;
-    background-color: green;
 }
 
 .btm-about-me-img {
