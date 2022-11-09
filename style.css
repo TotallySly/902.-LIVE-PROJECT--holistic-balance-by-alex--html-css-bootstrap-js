@@ -321,10 +321,12 @@ About Me - Start - All Devices ********************************************** */
 
 .card-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 5rem;
+    text-align: center;
 }
 
 .card-one-container,
@@ -381,6 +383,14 @@ About Me - Start - All Devices ********************************************** */
     margin-left: -4rem;
 }
 
+@media (max-width: 768px) {
+    .card-one-container,
+    .card-two-container,
+    .card-three-container {
+        margin-right: 4rem;
+    }
+}
+
 .btm-about-me-img {
     height: 100vh;
     background-image: url('assets/website-images/stock-massage-img.jpg');
@@ -390,14 +400,6 @@ About Me - Start - All Devices ********************************************** */
     background-color: var(--main-colour);
 }
 
-@media (max-width: 768px) {
-    .card-one-container,
-    .card-two-container,
-    .card-three-container {
-        margin-right: 4rem;
-    }
-}
-
 .btm-about-me-img-blend {
     position: absolute;
     width: 100%;
@@ -405,44 +407,46 @@ About Me - Start - All Devices ********************************************** */
     background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
 }
 
-.cards-container {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+.info-container {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards-container {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.price-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.cards {
-    background-color: var(--tertiary-colour);
-    margin: 2rem;
-    padding: 4rem;
-    text-align: center;
-}
-
-.cards > h1 {
-    text-transform: uppercase;
+@media (max-width: 571px) {
+    .price-container {
+        width: 100%;
+    }
 }
 
 .address-card-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.address-card {
-    background-color: var(--tertiary-colour);
-    margin: 2rem;
-    padding: 2rem;
+.book-me-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
