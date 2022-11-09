@@ -324,7 +324,14 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    perspective: 1000px;
+    gap: 5rem;
+}
+
+.card-one-container,
+.card-two-container,
+.card-three-container {
+    height: 20rem;
+    width: 20rem;
 }
 
 .card-one-container:hover > .card-one {
@@ -343,14 +350,12 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .card-one {
-    height: 20rem;
-    width: 20rem;
+    height: 100%;
+    width: 100%;
     padding: 2rem;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
-    margin-right: 5rem;
-    margin-bottom: 2rem;
 }
 
 .front-one,
@@ -372,8 +377,8 @@ About Me - Start - All Devices ********************************************** */
 .back-one {
     font-size: 1.2rem;
     padding: 2rem;
-    transform: rotateY(-180deg);
-    margin-right: 4rem;
+    transform: rotateY(180deg);
+    margin-left: -4rem;
 }
 
 .btm-about-me-img {
@@ -383,6 +388,14 @@ About Me - Start - All Devices ********************************************** */
     background-position: center;
     background-size: cover;
     background-color: var(--main-colour);
+}
+
+@media (max-width: 768px) {
+    .card-one-container,
+    .card-two-container,
+    .card-three-container {
+        margin-right: 4rem;
+    }
 }
 
 .btm-about-me-img-blend {
