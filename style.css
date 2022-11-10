@@ -378,9 +378,7 @@ About Me - Start - All Devices ********************************************** */
 */
 
 @media (max-width: 768px) {
-    .card-one-container,
-    .card-two-container,
-    .card-three-container {
+    .massage-card-container {
         margin-right: 4rem;
     }
 }
@@ -415,7 +413,7 @@ About Me - Start - All Devices ********************************************** */
     justify-content: flex-start;
 }
 
-.price-container {
+.prices-container {
     text-align: center;
     height: 100%;
     display: flex;
@@ -423,13 +421,18 @@ About Me - Start - All Devices ********************************************** */
     flex-wrap: wrap;
 }
 
-.price-cards {
+.price-box-container {
     width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.price-box {
+    background-color: var(--main-colour);
+    padding: 2rem;
 }
 
 @media (max-width: 571px) {
