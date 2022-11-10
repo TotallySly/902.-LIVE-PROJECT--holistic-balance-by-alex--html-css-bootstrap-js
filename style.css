@@ -373,7 +373,7 @@ About Me - Start - All Devices ********************************************** */
 
 /* 
 ****************************************************************
-                Media Query for the different massages 
+                Media Query for the different massages  - Start
 ****************************************************************
 */
 
@@ -385,7 +385,7 @@ About Me - Start - All Devices ********************************************** */
 
 /* 
 ****************************************************************
-                Media Query for the different massages
+                Media Query for the different massages - End
 ****************************************************************
 */
 
@@ -406,19 +406,19 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .massage-info-container {
-    margin-top: 10rem;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    height: 100%;
 }
 
 .prices-container {
-    text-align: center;
-    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 50%;
 }
 
 .price-box-container {
@@ -431,20 +431,34 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .price-box {
+    text-align: center;
     background-color: var(--main-colour);
     padding: 2rem;
 }
 
+/* 
+****************************************************************
+                Media Query to make content into a column- Start
+****************************************************************
+*/
+
 @media (max-width: 571px) {
-    .price-container {
+    .price-box-container {
         width: 100%;
     }
 }
+
+/* 
+****************************************************************
+                Media Query to make content into a column - End
+****************************************************************
+*/
 
 .book-me-container {
     height: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .address-card-container {
