@@ -319,7 +319,7 @@ About Me - Start - All Devices ********************************************** */
 ****************************************************************
 */
 
-.card-container {
+.massage-cards-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -329,29 +329,17 @@ About Me - Start - All Devices ********************************************** */
     text-align: center;
 }
 
-.card-one-container,
-.card-two-container,
-.card-three-container {
+.massage-card-container {
     height: 20rem;
     width: 20rem;
 }
 
-.card-one-container:hover > .card-one {
+.massage-card-container:hover > .massage-card {
     cursor: pointer;
     transform: rotateY(180deg);
 }
 
-.card-two-container:hover > .card-one {
-    cursor: pointer;
-    transform: rotateY(180deg);
-}
-
-.card-three-container:hover > .card-one {
-    cursor: pointer;
-    transform: rotateY(180deg);
-}
-
-.card-one {
+.massage-card {
     height: 100%;
     width: 100%;
     padding: 2rem;
@@ -360,8 +348,8 @@ About Me - Start - All Devices ********************************************** */
     transform-style: preserve-3d;
 }
 
-.front-one,
-.back-one {
+.massage-card-front,
+.massage-card-back {
     background-color: var(--tertiary-colour);
     height: 100%;
     width: 100%;
@@ -369,19 +357,25 @@ About Me - Start - All Devices ********************************************** */
     backface-visibility: hidden;
 }
 
-.front-one {
+.massage-card-front {
     display: flex;
     justify-content: center;
     align-items: center;
     transform: rotateY(0deg);
 }
 
-.back-one {
+.massage-card-back {
     font-size: 1.2rem;
     padding: 2rem;
     transform: rotateY(180deg);
     margin-left: -4rem;
 }
+
+/* 
+****************************************************************
+                Media Query for the different massages 
+****************************************************************
+*/
 
 @media (max-width: 768px) {
     .card-one-container,
@@ -391,7 +385,13 @@ About Me - Start - All Devices ********************************************** */
     }
 }
 
-.btm-about-me-img {
+/* 
+****************************************************************
+                Media Query for the different massages
+****************************************************************
+*/
+
+.btm-massage-img {
     height: 100vh;
     background-image: url('assets/website-images/stock-massage-img.jpg');
     position: relative;
@@ -400,14 +400,14 @@ About Me - Start - All Devices ********************************************** */
     background-color: var(--main-colour);
 }
 
-.btm-about-me-img-blend {
+.btm-massage-img-blend {
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
 }
 
-.info-container {
+.massage-info-container {
     margin-top: 10rem;
     height: 100%;
     display: flex;
@@ -415,7 +415,7 @@ About Me - Start - All Devices ********************************************** */
     justify-content: flex-start;
 }
 
-.cards-container {
+.price-container {
     text-align: center;
     height: 100%;
     display: flex;
@@ -423,7 +423,7 @@ About Me - Start - All Devices ********************************************** */
     flex-wrap: wrap;
 }
 
-.price-container {
+.price-cards {
     width: 50vw;
     display: flex;
     flex-direction: column;
