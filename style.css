@@ -413,13 +413,21 @@ About Me - Start - All Devices ********************************************** */
     position: relative;
 }
 
-.prices-container {
-}
-
 .price-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .price-box {
+    background-color: var(--main-colour);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .address-box {
