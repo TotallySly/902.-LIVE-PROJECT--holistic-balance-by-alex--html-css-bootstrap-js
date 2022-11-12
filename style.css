@@ -593,8 +593,20 @@ About Me - Start - All Devices ********************************************** */
     padding-top: 3rem;
 }
 
+.card-text {
+    font-size: 1.2rem;
+}
+
 .card a {
     background-color: var(--secondary-colour);
     color: var(--main-colour);
     border: solid 1px black;
+}
+
+.events-container {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
