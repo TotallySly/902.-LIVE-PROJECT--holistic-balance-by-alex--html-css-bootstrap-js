@@ -430,7 +430,45 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
 }
 
+.book-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-me-box > button {
+    border: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--main-colour);
+}
+
+.book-me-box a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.address-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .address-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-colour);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
 }
 
 /* 
