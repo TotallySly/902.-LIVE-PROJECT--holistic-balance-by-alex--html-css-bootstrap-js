@@ -317,7 +317,7 @@ About Me - Start - All Devices ********************************************** */
 
 /* 
 ****************************************************************
-                Massage - Start - All Devices????
+                Massage - Start - All Devices
 ****************************************************************
 */
 
@@ -346,6 +346,8 @@ About Me - Start - All Devices ********************************************** */
 .massage-card-container {
     height: 20rem;
     width: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .massage-card-container:hover > .massage-card {
@@ -504,6 +506,28 @@ About Me - Start - All Devices ********************************************** */
 
 /* 
 ****************************************************************
-                Massage - End - All Devices????+
+                Massage - End - All Devices
 ****************************************************************
 */
+
+/* 
+****************************************************************
+                Yoga - Start - All Devices
+****************************************************************
+*/
+
+.yoga-img-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.yoga-img {
+    height: 100vh;
+    width: 100%;
+    background-image: url('assets/website-images/yoga-pose-at-home-arm-stretch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10rem;
+    transform: scaleX(-1);
+}
