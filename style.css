@@ -517,9 +517,8 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .yoga-img-container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    display: flex;
 }
 
 .yoga-img {
@@ -530,4 +529,34 @@ About Me - Start - All Devices ********************************************** */
     background-size: cover;
     background-position: -10rem;
     transform: scaleX(-1);
+}
+
+.yoga-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btm-yoga-img {
+    height: 110vh;
+    background-image: url('assets/website-images/childs-pose.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-colour);
+}
+
+.btm-yoga-img-blend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
+}
+
+.yoga-info-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
