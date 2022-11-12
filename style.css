@@ -450,20 +450,21 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
 }
 
-.book-me-box > button {
-    border: none;
+.book-me-box a {
+    background-color: var(--secondary-colour);
+    color: var(--main-colour);
+    border: solid 1px black;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    background-color: var(--main-colour);
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
-.book-me-box a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 3px;
-    font-weight: bold;
+.book-me-box a:hover {
+    background-color: var(--main-colour);
 }
 
 .address-card-container {
@@ -590,4 +591,10 @@ About Me - Start - All Devices ********************************************** */
 
 .card > img {
     padding-top: 3rem;
+}
+
+.card a {
+    background-color: var(--secondary-colour);
+    color: var(--main-colour);
+    border: solid 1px black;
 }
