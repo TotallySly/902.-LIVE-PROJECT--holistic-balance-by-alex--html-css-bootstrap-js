@@ -341,13 +341,12 @@ About Me - Start - All Devices ********************************************** */
     flex-wrap: wrap;
     gap: 5rem;
     text-align: center;
-    margin-bottom: 1git 0rem;
+    margin-bottom: 10rem;
 }
 .massage-card-container {
     height: 20rem;
     width: 20rem;
     margin-top: 5rem;
-    margin-bottom: 10rem;
 }
 
 .massage-card-container:hover > .massage-card {
@@ -548,6 +547,20 @@ About Me - Start - All Devices ********************************************** */
     background-color: var(--main-colour);
 }
 
+/* 
+****************************************************************
+                Media Query To Remove Background Image
+****************************************************************
+*/
+
+@media (max-width: 658px) {
+    .btm-yoga-img {
+        margin-top: 5rem;
+        background-color: var(--main-colour);
+        background-image: none;
+    }
+}
+
 .btm-yoga-img-blend {
     position: absolute;
     width: 100%;
@@ -567,16 +580,14 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .card {
+    text-align: center;
     height: 25rem;
-    width: 18rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width: 571px) {
-    .btm-yoga-img {
-        background-color: var(--main-colour);
-        background-image: none;
-    }
+.card > img {
+    padding-top: 3rem;
 }
