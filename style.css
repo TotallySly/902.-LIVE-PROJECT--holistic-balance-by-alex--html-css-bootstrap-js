@@ -321,6 +321,16 @@ About Me - Start - All Devices ********************************************** */
 ****************************************************************
 */
 
+.massage-text {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.massage-block-text {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .massage-cards-container {
     display: flex;
     flex-direction: row;
