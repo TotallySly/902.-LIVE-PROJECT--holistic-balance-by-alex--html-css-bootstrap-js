@@ -555,8 +555,28 @@ About Me - Start - All Devices ********************************************** */
     background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
 }
 
-.yoga-info-container {
+.yoga-box-container {
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    height: 25rem;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 571px) {
+    .btm-yoga-img {
+        background-color: var(--main-colour);
+        background-image: none;
+    }
 }
