@@ -322,11 +322,13 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .massage-text {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 .massage-block-text {
+    margin-top: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
