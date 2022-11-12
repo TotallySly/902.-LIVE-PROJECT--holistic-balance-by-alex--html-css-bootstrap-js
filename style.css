@@ -453,17 +453,14 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .address-card-container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .address-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: var(--main-colour);
     padding-top: 2rem;
     padding-bottom: 2rem;
