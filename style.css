@@ -558,10 +558,7 @@ About Me - Start - All Devices ********************************************** */
 
 @media (max-width: 674px) {
     .btm-yoga-img {
-        height: 200vh;
-        margin-top: 5rem;
-        background-color: var(--main-colour);
-        background-image: none;
+        height: 300vh;
     }
 }
 
