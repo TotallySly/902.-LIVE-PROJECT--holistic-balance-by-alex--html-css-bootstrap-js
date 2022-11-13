@@ -446,6 +446,7 @@ About Me - Start - All Devices ********************************************** */
 
 .book-me-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -465,6 +466,13 @@ About Me - Start - All Devices ********************************************** */
 
 .book-me-box a:hover {
     background-color: var(--main-colour);
+}
+
+.hours-box {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: var(--main-colour);
+    padding: 1rem;
 }
 
 .address-card-container {
@@ -640,9 +648,9 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .contact-me-text {
-    height: 50%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
