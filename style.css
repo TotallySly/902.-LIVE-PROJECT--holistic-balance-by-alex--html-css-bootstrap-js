@@ -21,7 +21,7 @@ body {
     font-family: 'Zen Loop', cursive;
     color: black;
     background-color: var(--main-colour);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: bold;
 }
