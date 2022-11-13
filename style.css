@@ -31,6 +31,10 @@ h2 {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cursive-text {
     font-family: 'Oooh Baby', cursive;
 }
@@ -675,19 +679,39 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .footer {
-    height: 10vh;
+    height: 15vh;
     background-color: var(--secondary-colour);
     color: var(--main-colour);
+    display: flex;
 }
 
 .footer-logo-container {
+    width: 25%;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-contacts {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-contacts a {
+    color: var(--main-colour);
+}
+
+.website-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 0.5rem;
+    font-weight: 400;
 }
