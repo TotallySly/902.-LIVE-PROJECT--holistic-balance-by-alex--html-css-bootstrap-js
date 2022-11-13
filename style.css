@@ -519,12 +519,12 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .yoga-img-container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .yoga-img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url('assets/website-images/yoga-pose-at-home-arm-stretch.png');
     background-repeat: no-repeat;
@@ -559,6 +559,7 @@ About Me - Start - All Devices ********************************************** */
 @media (max-width: 674px) {
     .btm-yoga-img {
         height: 300vh;
+        background-image: none;
     }
 }
 
