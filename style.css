@@ -524,7 +524,7 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .yoga-img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-image: url('assets/website-images/yoga-pose-at-home-arm-stretch.png');
     background-repeat: no-repeat;
