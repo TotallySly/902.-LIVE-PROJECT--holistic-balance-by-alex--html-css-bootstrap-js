@@ -540,6 +540,10 @@ About Me - Start - All Devices ********************************************** */
     text-align: center;
 }
 
+.yoga-classes-container {
+    width: 100vw;
+}
+
 .btm-yoga-img {
     height: 110vh;
     background-image: url('assets/website-images/childs-pose.png');
@@ -578,7 +582,6 @@ About Me - Start - All Devices ********************************************** */
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 50rem;
 }
 
 .card {
