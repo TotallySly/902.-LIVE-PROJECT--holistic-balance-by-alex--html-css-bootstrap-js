@@ -443,6 +443,7 @@ About Me - Start - All Devices ********************************************** */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .book-me-box a {
@@ -451,11 +452,12 @@ About Me - Start - All Devices ********************************************** */
     border: solid 1px black;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-left: 0.7rem;
 }
 
 .book-me-box a:hover {
@@ -464,9 +466,10 @@ About Me - Start - All Devices ********************************************** */
 
 .hours-box {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     background-color: var(--main-colour);
     padding: 1rem;
+    margin-left: 0.7rem;
 }
 
 .address-card-container {
@@ -474,6 +477,9 @@ About Me - Start - All Devices ********************************************** */
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+    font-size: 1.2rem;
+    width: 100vw;
+    margin-left: 0.7rem;
 }
 
 .address-box {
@@ -481,10 +487,9 @@ About Me - Start - All Devices ********************************************** */
     background-color: var(--main-colour);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
-
 /* 
 ****************************************************************
                 Media Query to make content into a column- Start
