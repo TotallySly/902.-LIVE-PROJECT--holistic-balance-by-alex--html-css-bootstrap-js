@@ -203,9 +203,10 @@ Main Styling - End - All Devices
 .masthead-one {
     min-height: 75vh;
     width: 100vw;
-    background-image: url('assets/website-images/massage-boilerplate-img.png');
+    background-image: url('assets/website-images/massage-stock-image.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     position: relative;
     color: var(--main-colour);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -397,6 +398,10 @@ About Me - Start - All Devices ********************************************** */
     .massage-card-container {
         margin-right: 4rem;
     }
+
+    .massage-text {
+        font-size: 1.5rem;
+    }
 }
 
 /* 
@@ -407,7 +412,7 @@ About Me - Start - All Devices ********************************************** */
 
 .btm-massage-img {
     height: 110vh;
-    background-image: url('assets/website-images/stock-massage-img.jpg');
+    background-image: url('assets/website-images/stock-massage-img.png');
     position: relative;
     background-position: center;
     background-size: cover;
