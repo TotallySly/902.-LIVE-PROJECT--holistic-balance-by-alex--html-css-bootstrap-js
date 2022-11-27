@@ -21,7 +21,7 @@ body {
     font-family: 'Zen Loop', cursive;
     color: black;
     background-color: var(--main-colour);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -298,6 +298,13 @@ About Me - Start - All Devices ********************************************** */
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .about-me-paragraph-containers {
+        font-size: 1.5rem;
+    }
 }
 
 .lotus-flower {
@@ -323,7 +330,6 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .massage-text {
-    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
 }
@@ -402,6 +408,10 @@ About Me - Start - All Devices ********************************************** */
     .massage-text {
         font-size: 1.5rem;
     }
+
+    .massage-block-text {
+        font-size: 1.3rem;
+    }
 }
 
 /* 
@@ -476,6 +486,7 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .hours-box {
+    text-align: center;
     font-size: 1.2rem;
     margin-top: 2rem;
     background-color: var(--main-colour);
@@ -488,9 +499,9 @@ About Me - Start - All Devices ********************************************** */
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
-    font-size: 1.2rem;
     width: 100vw;
     margin-left: 0.7rem;
+    font-size: 1.8rem;
 }
 
 .address-box {
@@ -506,6 +517,12 @@ About Me - Start - All Devices ********************************************** */
                 Media Query to make content into a column- Start
 ****************************************************************
 */
+
+@media (max-width: 768px) {
+    .address-card-container {
+        font-size: 1.3rem;
+    }
+}
 
 @media (max-width: 571px) {
     .btm-massage-img {
@@ -554,6 +571,7 @@ About Me - Start - All Devices ********************************************** */
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .yoga-classes-container {
@@ -575,6 +593,12 @@ About Me - Start - All Devices ********************************************** */
                 Media Query To Remove Background Image
 ****************************************************************
 */
+
+@media (max-width: 768px) {
+    .yoga-text-container {
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 674px) {
     .btm-yoga-img {
@@ -672,6 +696,12 @@ About Me - Start - All Devices ********************************************** */
 
 .bi-instagram > a {
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contact-me-text {
+        font-size: 1.5rem;
+    }
 }
 
 /* 
