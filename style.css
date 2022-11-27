@@ -24,6 +24,7 @@ body {
     font-size: 1.8rem;
     letter-spacing: 2px;
     font-weight: bold;
+    overflow-y: hidden;
 }
 
 h1,
