@@ -308,13 +308,13 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .lotus-flower {
-    height: 33vh;
+    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     color: var(--tertiary-colour);
-    font-size: 10rem;
+    font-size: 5rem;
 }
 
 /* 
