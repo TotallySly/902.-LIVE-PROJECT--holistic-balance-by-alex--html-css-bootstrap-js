@@ -74,11 +74,11 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-#headingTitle {
+.headingTitle {
     font-family: 'Oooh Baby', cursive;
     text-align: center;
     font-size: 3rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
