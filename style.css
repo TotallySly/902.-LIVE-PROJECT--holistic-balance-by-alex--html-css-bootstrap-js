@@ -301,7 +301,6 @@ About Me - Start - All Devices ********************************************** */
 .about-me-paragraph-containers {
     background-color: var(--tertiary-colour);
     padding: 2rem;
-    margin-bottom: 5rem;
     font-size: 1.8rem;
 }
 
