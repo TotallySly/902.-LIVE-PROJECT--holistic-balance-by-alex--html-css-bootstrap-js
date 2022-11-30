@@ -24,7 +24,7 @@ body {
     font-size: 1.8rem;
     letter-spacing: 2px;
     font-weight: bold;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h1,
@@ -296,8 +296,7 @@ About Me - Start - All Devices ********************************************** */
 
 .about-me-paragraph-containers {
     background-color: var(--tertiary-colour);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
@@ -309,13 +308,14 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .lotus-flower {
+    margin-top: 10rem;
     height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     color: var(--tertiary-colour);
-    font-size: 5rem;
+    font-size: 10rem;
 }
 
 /* 
