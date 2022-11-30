@@ -302,6 +302,8 @@ About Me - Start - All Devices ********************************************** */
     background-color: var(--tertiary-colour);
     padding: 2rem;
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -316,7 +318,7 @@ About Me - Start - All Devices ********************************************** */
     justify-content: center;
     align-content: center;
     color: var(--tertiary-colour);
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 /* 
@@ -692,7 +694,7 @@ About Me - Start - All Devices ********************************************** */
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
