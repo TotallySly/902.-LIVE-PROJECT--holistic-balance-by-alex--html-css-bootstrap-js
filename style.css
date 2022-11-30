@@ -58,6 +58,10 @@ a {
     margin-bottom: 2rem;
 }
 
+.col {
+    border: 2px sold blue;
+}
+
 /* 
 ****************************************************************
 Main Styling - End - All Devices
@@ -297,25 +301,23 @@ About Me - Start - All Devices ********************************************** */
 .about-me-paragraph-containers {
     background-color: var(--tertiary-colour);
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-size: 1.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .about-me-paragraph-containers {
         font-size: 1.5rem;
     }
 }
 
 .lotus-flower {
-    margin-top: 10rem;
-    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     color: var(--tertiary-colour);
-    font-size: 10rem;
+    font-size: 3rem;
 }
 
 /* 
