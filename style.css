@@ -818,19 +818,41 @@ About Me - Start - All Devices ********************************************** */
         font-size: 10rem;
     }
 
+    #aboutMe {
+        height: 75vh;
+    }
+
     .about-me {
         font-size: 2rem;
+    }
+
+    #massage {
+        margin-top: 25rem;
+        height: 75vh;
     }
 
     .massage {
         font-size: 2rem;
     }
 
+    #priceList {
+        height: 90vh;
+    }
+
+    #yoga {
+        height: 75vh;
+    }
+
     .yoga {
         font-size: 2rem;
     }
 
+    #contact {
+        height: 85vh;
+    }
+
     .contact {
+        padding-top: 3rem;
         font-size: 2rem;
     }
 }
