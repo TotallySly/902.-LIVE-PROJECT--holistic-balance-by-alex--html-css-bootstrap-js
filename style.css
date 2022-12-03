@@ -812,3 +812,25 @@ About Me - Start - All Devices ********************************************** */
     font-size: 0.5rem;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .fa-spa {
+        font-size: 10rem;
+    }
+
+    .about-me {
+        font-size: 2rem;
+    }
+
+    .massage {
+        font-size: 2rem;
+    }
+
+    .yoga {
+        font-size: 2rem;
+    }
+
+    .contact {
+        font-size: 2rem;
+    }
+}
