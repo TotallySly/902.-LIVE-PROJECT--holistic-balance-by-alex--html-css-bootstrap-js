@@ -74,14 +74,6 @@ Main Styling - End - All Devices
 ****************************************************************
 */
 
-.headingTitle {
-    font-family: 'Oooh Baby', cursive;
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-}
-
 .smaller-heading-title {
     font-family: 'Oooh Baby', cursive;
     text-align: center;
@@ -298,27 +290,45 @@ Hero Image- End - All Devices (????) *******************************************
 /********************** 
 About Me - Start - All Devices ********************************************** */
 
-.about-me-paragraph-containers {
+#aboutMe {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-spa {
+    font-size: 20rem;
+    color: var(--tertiary-colour);
+}
+
+.about-me {
+    font-size: 3.5rem;
+}
+
+.about-me-container {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-container > img {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-me-paragraph {
     background-color: var(--tertiary-colour);
     padding: 2rem;
     font-size: 1.8rem;
-    display: flex;
-    align-items: center;
+    width: 95%;
 }
 
 @media (max-width: 991px) {
     .about-me-paragraph-containers {
         font-size: 1.5rem;
     }
-}
-
-.lotus-flower {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    color: var(--tertiary-colour);
-    font-size: 5rem;
 }
 
 /* 
@@ -332,6 +342,19 @@ About Me - Start - All Devices ********************************************** */
                 Massage - Start - All Devices
 ****************************************************************
 */
+
+#massage {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.massage {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+}
 
 .massage-text {
     margin-top: 1rem;
@@ -423,6 +446,14 @@ About Me - Start - All Devices ********************************************** */
                 Media Query for the different massages - End
 ****************************************************************
 */
+
+#priceList {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
 
 .btm-massage-img {
     height: 110vh;
@@ -555,6 +586,19 @@ About Me - Start - All Devices ********************************************** */
 ****************************************************************
 */
 
+#yoga {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.yoga {
+    font-size: 3.5rem;
+    margin-bottom: 10rem;
+}
+
 .yoga-img-container {
     height: 100%;
     width: 100%;
@@ -682,6 +726,18 @@ About Me - Start - All Devices ********************************************** */
                 Contact Me - Start - All Devices
 ****************************************************************
 */
+
+#contactMe {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.contact {
+    font-size: 3.5rem;
+}
 
 .contact-me-container {
     text-align: center;
