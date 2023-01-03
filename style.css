@@ -58,10 +58,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.col {
-    border: 2px sold blue;
-}
-
 /* 
 ****************************************************************
 Main Styling - End - All Devices
@@ -708,11 +704,20 @@ About Me - Start - All Devices ********************************************** */
 */
 
 .events-container {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    height: 75vh;
+}
+
+.special-workshop-header {
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.events-container p {
+    margin-top: 3rem;
 }
 
 /* 
@@ -733,6 +738,7 @@ About Me - Start - All Devices ********************************************** */
     justify-content: center;
     align-items: center;
     padding-bottom: 3em;
+    margin-top: 60rem;
 }
 
 .contact {
