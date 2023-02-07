@@ -1,50 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 
+/* Universal Styling */
+
 :root {
     --main-colour: rgba(251, 248, 241);
     --secondary-colour: rgba(66, 95, 87);
     --tertiary-colour: rgba(206, 229, 208, 0.3);
+    --nav-heading-font: 'Oooh Baby', cursive;
 }
-
-/* 
-****************************************************************
-Main Styling - Start - All Devices
-****************************************************************
-*/
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Zen Loop', cursive;
-    color: black;
-    background-color: var(--main-colour);
-    font-size: 1.8rem;
-    letter-spacing: 2px;
-    font-weight: bold;
     overflow-x: hidden;
 }
 
-h1,
-h2 {
-    font-weight: bold;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-.cursive-text {
-    font-family: 'Oooh Baby', cursive;
+.fluid-sizing {
+    max-width: 100%;
+    height: auto;
 }
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(3px);
     opacity: 0;
-    transition: all 2s;
+    transition: all 2.5s;
 }
 
 .reveal.activeScroll {
@@ -52,331 +38,317 @@ a {
     opacity: 1;
 }
 
-.text-container {
-    background-color: var(--tertiary-colour);
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* 
-****************************************************************
-Main Styling - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Headings - Start - All Devices
-****************************************************************
-*/
-
-.smaller-heading-title {
-    font-family: 'Oooh Baby', cursive;
+.container-reveal {
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    max-width: 95vw;
+    background-color: var(--tertiary-colour);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* 
-****************************************************************
-                Headings - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Nav Bar- Start - All Devices
-****************************************************************
-*/
-
-.navbar {
-    background-color: var(--secondary-colour);
-    letter-spacing: 0.1rem;
+.container-reveal p {
+    margin-bottom: 0;
 }
 
-.navbar-brand {
-    font-size: 2.7rem;
-    padding-left: 0.5rem;
+.navigation-heading {
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+    padding-top: 12rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--nav-heading-font);
+}
+
+/* .container-fluid,
+.container {
+    border: solid 4px green;
+} */
+
+body {
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: black;
+    background-color: var(--tertiary-colour);
+}
+
+a {
+    text-decoration: none;
     color: var(--main-colour);
-    margin-top: -1.5rem;
-    font-weight: 400;
 }
 
-.navbar-brand-bigger-letter {
+button {
+    background: none;
+    color: var(--main-colour);
+    border: none;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+/* Navigation Bar Styling */
+/* Logo */
+
+.navigation-bar {
+    overflow: hidden;
+    max-height: max-content;
+    width: 100vw;
+    background-color: var(--secondary-colour);
+    color: var(--main-colour);
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.navigation-bar .logo {
+    font-weight: 400;
+    padding-left: 0.5rem;
+}
+
+.navigation-bar .logo > span:nth-of-type(odd) {
     font-size: 4.5rem;
 }
 
-.navbar-toggler {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    border-color: var(--main-colour);
+.navigation-bar .logo > span:nth-of-type(even) {
+    font-size: 2.5rem;
+    margin-left: -0.3rem;
 }
 
-@media (max-width: 400px) {
-    .navbar-toggler {
-        font-size: 1rem;
-        margin-right: 0.5rem;
-    }
-}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: 2px solid var(--main-colour);
-    box-shadow: none;
-}
-
-.fa-bars {
-    color: var(--main-colour);
-}
-
-.slogan {
-    font-size: 2rem;
+.navigation-bar .logo > div {
+    max-height: fit-content;
+    max-width: 225px;
     text-align: right;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
+    font-size: 2rem;
 }
 
-.navbar-nav {
+/* Hamburger */
+.hamburger-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+}
+
+.hamburger-container .fa-bars,
+.fa-x {
+    font-size: 1.5rem;
+}
+
+.hamburger-container i:hover {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--tertiary-colour);
+    font-size: 1.7rem;
+    transition: all ease-in 0.7s;
+}
+
+/* Navigation Links */
+.navigation-links {
+    font-weight: 400;
     text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
 }
 
-.nav-item {
-    padding-right: 5rem;
-    padding-left: 1rem;
+.navigation-links .fa-chevron-down {
+    font-size: 0.55rem;
 }
 
-.nav-link {
-    color: var(--main-colour);
-    font-weight: 500;
+.navigation-links ul {
+    margin-bottom: auto;
 }
 
-.nav-link:hover {
-    color: var(--main-colour);
-    font-weight: bold;
+.navigation-links li {
+    font-size: 1rem;
 }
 
-.active {
-    font-weight: 900;
+.navigation-links a {
+    padding: 0.5;
 }
 
-.dropdown-menu {
-    background-color: var(--secondary-colour);
+.navigation-links a:hover,
+i:hover {
+    background-color: var(--tertiary-colour);
+    border-radius: 10px;
+    padding: 0.3rem;
+    transition: all ease-in 1s;
 }
 
-.dropdown-item {
-    color: var(--main-colour);
+/* Carousel Styling */
+.extra-container {
+    padding-top: 15rem;
 }
 
-.dropdown-item:hover {
-    background-color: var(--main-colour);
-    font-weight: bold;
+.container-fluid {
+    height: max-content;
 }
-
-/* 
-****************************************************************
-                Nav Bar- End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Hero Image- Start - All Devices (????)
-****************************************************************
-*/
 
 .carousel-container {
-    height: 75vh;
-    background-color: var(--secondary-colour);
-    width: 100vw;
+    position: relative;
+    border-radius: 10px;
+    width: 80vw;
+    height: 50vh;
+    margin-left: 1.5rem;
+    overflow: hidden;
 }
 
-.masthead-one {
-    min-height: 75vh;
-    width: 100vw;
-    background-image: url('assets/website-images/massage-stock-image.png');
+.carousel-container .carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container .carousel .slider {
+    display: flex;
+    gap: 1px;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform ease-in-out 2s;
+}
+
+.carousel-container .carousel .slider .slide {
+    flex-basis: 100%;
+    position: relative;
+    /* border: 5px solid red; */
+    width: min-content;
+}
+
+.carousel-container .carousel .slider .slide h1,
+h3 {
+    position: absolute;
+    border-radius: 10px;
+    padding: 0.3rem 0.6rem;
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    font-weight: bold;
+    width: fit-content;
+}
+
+.carousel-container .carousel .slider .slide h1 {
+    font-size: 1.6rem;
+    top: 2rem;
+    left: 0.5rem;
+}
+
+.carousel-container .carousel .slider .slide h3 {
+    bottom: 1rem;
+    left: 0.5rem;
+    right: 1rem;
+    font-size: 1.3rem;
+}
+
+.carousel-slide-img-one {
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/massage-stock-image.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
-    position: relative;
-    color: var(--main-colour);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 4px;
-    font-size: 4rem;
+    background-position: center center;
+    border-radius: 10px;
+    /* margin-top: 1rem; */
 }
 
-.overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+.carousel-slide-img-one::after {
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.7;
+    background-color: var(--tertiary-colour);
 }
 
-.overlay > h1 {
-    opacity: 0;
+.carousel-slide-img-two {
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/yoga-pose-marmaid-on-rock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    /* margin-top: 1rem; */
 }
 
-.overlay > p {
-    opacity: 0;
+.controls .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
 }
 
-.overlay > h1 {
-    animation: fadeInLeft 1.5s ease forwards;
+.controls .arrow.left {
+    left: 10px;
 }
 
-.overlay > p {
-    animation: fadeInRight 1.5s ease forwards;
+.controls .arrow.right {
+    right: 10px;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.controls .arrow .h-chevron-left,
+.h-chevron-right {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: var(--secondary-colour);
+    background-color: var(--tertiary-colour);
 }
 
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.masthead-two {
-    background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png');
-    background-position: center;
-}
-
-.fa-chevron-left {
-    color: var(--main-colour);
-}
-
-.fa-chevron-right {
-    color: var(--main-colour);
-}
-
-@media (max-width: 768px) {
-    .carousel-container {
-        height: 66vh;
-    }
-
-    .masthead-one {
-        min-height: 66vh;
-        font-size: 1.4rem;
-    }
-}
-
-/* ******************
-Hero Image- End - All Devices (????) ******************************************** */
-
-/********************** 
-About Me - Start - All Devices ********************************************** */
-
-#aboutMe {
-    height: 55vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fa-spa {
-    font-size: 20rem;
-    color: var(--tertiary-colour);
-}
-
-.about-me {
-    font-size: 3.5rem;
-}
-
-.about-me-container {
-    height: 150vh;
+/* About Me */
+.container-about-me {
+    height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.about-me-container > img {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-}
-
-.about-me-paragraph {
-    background-color: var(--tertiary-colour);
-    padding: 2rem;
-    font-size: 1.8rem;
-    width: 95%;
-}
-
-@media (max-width: 991px) {
-    .about-me-paragraph-containers {
-        font-size: 1.5rem;
-    }
-}
-
-/* 
-****************************************************************
-                About Me - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Massage - Start - All Devices
-****************************************************************
-*/
-
-#massage {
-    height: 55vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.massage {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
-    font-size: 3.5rem;
+.container-about-me img {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
-.massage-text {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-}
-
-.massage-block-text {
-    margin-top: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.massage-cards-container {
+/* Massage Information */
+.container-massage-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 5rem;
-    text-align: center;
-    margin-bottom: 10rem;
+    height: max-content;
 }
+
+.container-massage-info a {
+    color: var(--secondary-colour);
+    font-weight: bold;
+}
+
+/* Different Types of Massage */
+.container-types-of-massage {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    margin: 5rem 0rem;
+}
+
 .massage-card-container {
-    height: 20rem;
-    width: 20rem;
-    margin-top: 5rem;
+    height: 17rem;
+    width: 15rem;
 }
 
 .massage-card-container:hover > .massage-card {
@@ -395,15 +367,19 @@ About Me - Start - All Devices ********************************************** */
 
 .massage-card-front,
 .massage-card-back {
-    background-color: var(--tertiary-colour);
+    background-color: var(--secondary-colour);
+    color: var(--main-colour);
     height: 100%;
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
-    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .massage-card-front {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,244 +387,145 @@ About Me - Start - All Devices ********************************************** */
 }
 
 .massage-card-back {
-    font-size: 1.2rem;
-    padding: 2rem;
-    transform: rotateY(180deg);
-    margin-left: -4rem;
-}
-
-/* 
-****************************************************************
-                Media Query for the different massages  - Start
-****************************************************************
-*/
-
-@media (max-width: 768px) {
-    .massage-card-container {
-        margin-right: 4rem;
-    }
-
-    .massage-text {
-        font-size: 1.5rem;
-    }
-
-    .massage-block-text {
-        font-size: 1.3rem;
-    }
-}
-
-/* 
-****************************************************************
-                Media Query for the different massages - End
-****************************************************************
-*/
-
-#priceList {
-    height: 70vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3em;
+    font-weight: bold;
+    padding: 2rem;
+    transform: rotateY(180deg);
 }
 
-.btm-massage-img {
-    height: 110vh;
-    background-image: url('assets/website-images/stock-massage-img.png');
+/* Massage Prices and Booking */
+
+.massage-img-background {
+    width: 100vw;
+    height: 120vh;
+    background-image: url('assets/stock-massage-img.png');
     position: relative;
     background-position: center;
     background-size: cover;
     background-color: var(--main-colour);
 }
 
-.btm-massage-img-blend {
+.massage-img-background-blend {
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
 }
 
-.massage-info-container {
-    height: 100%;
-    width: 100%;
-    position: relative;
+.container-massage-price-info {
+    padding-top: 5rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.price-box-container {
+.container-massage-price {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+}
+
+.container-massage-price .massage-price {
+    text-align: center;
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-massage-price .massage-price h1,
+h2 {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.discount-box {
+    width: 50vw;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.discount-box p {
+    margin-bottom: 0;
+}
+
+.container-reviews {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
-.price-box {
-    background-color: var(--main-colour);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-reviews i {
+    padding: 0.5rem 0;
+    color: gold;
 }
 
-.book-me-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+.container-booking-info {
+    margin-top: 3rem;
 }
 
-.book-me-box a {
-    background-color: var(--secondary-colour);
+.container-booking-info a {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     color: var(--main-colour);
-    border: solid 1px black;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-left: 0.7rem;
+    background-color: var(--secondary-colour);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-.book-me-box a:hover {
+.container-booking-info a:hover {
+    color: var(--secondary-colour);
     background-color: var(--main-colour);
+    transition: ease-in-out 0.5s;
 }
 
-.hours-box {
+.address {
+    margin-top: 3rem;
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 2rem;
+    opacity: 1;
     background-color: var(--main-colour);
-    padding: 1rem;
-    margin-left: 0.7rem;
 }
 
-.address-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 2px;
-    width: 100vw;
-    margin-left: 0.7rem;
-    font-size: 1.8rem;
+.address a {
+    color: var(--secondary-colour);
 }
 
-.address-box {
+/* Yoga */
+
+.container-yoga .yoga-img {
     text-align: center;
-    background-color: var(--main-colour);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-/* 
-****************************************************************
-                Media Query to make content into a column- Start
-****************************************************************
-*/
-
-@media (max-width: 768px) {
-    .address-card-container {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 571px) {
-    .btm-massage-img {
-        height: 150vh;
-    }
-    .price-box-container {
-        width: 100%;
-    }
-}
-
-/* 
-****************************************************************
-                Media Query to make content into a column - End
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Massage - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Yoga - Start - All Devices
-****************************************************************
-*/
-
-#yoga {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
-}
-
-.yoga {
-    font-size: 3.5rem;
-    margin-bottom: 10rem;
-}
-
-.yoga-img-container {
-    height: 100%;
+    height: 50vh;
     width: 100%;
-}
-
-.yoga-img {
-    height: 100vh;
-    width: 100%;
-    background-image: url('assets/website-images/yoga-pose-at-home-arm-stretch.png');
+    background-image: url('assets/yogaposeathome.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -10rem;
-    transform: scaleX(-1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.yoga-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.yoga-classes-container {
-    width: 100vw;
+.container-yoga div {
+    margin-top: 3rem;
 }
 
 .btm-yoga-img {
-    height: 110vh;
-    background-image: url('assets/website-images/childs-pose.png');
+    height: max-content;
+    background-image: url('assets/childs-pose-test.png');
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: var(--main-colour);
-}
-
-/* 
-****************************************************************
-                Media Query To Remove Background Image
-****************************************************************
-*/
-
-@media (max-width: 768px) {
-    .yoga-text-container {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 674px) {
-    .btm-yoga-img {
-        height: 300vh;
-        background-image: none;
-    }
 }
 
 .btm-yoga-img-blend {
@@ -658,129 +535,120 @@ About Me - Start - All Devices ********************************************** */
     background-image: linear-gradient(to bottom, rgba(251, 248, 241, 1), rgba(251, 248, 241, 0));
 }
 
-.yoga-box-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.card {
-    text-align: center;
-    height: 25rem;
-    width: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card > img {
-    padding-top: 3rem;
-}
-
-.card-text {
-    font-size: 1.2rem;
-}
-
-.card a {
-    background-color: var(--secondary-colour);
-    color: var(--main-colour);
-    border: solid 1px black;
-}
-
-/* 
-****************************************************************
-                Yoga - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Events - Start - All Devices
-****************************************************************
-*/
-
-.events-container {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-top: 5rem;
-    height: 75vh;
-}
-
-.special-workshop-header {
-    font-size: 3rem;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-}
-
-.events-container p {
-    margin-top: 3rem;
-}
-
-/* 
-****************************************************************
-                Events - End - All Devices
-****************************************************************
-*/
-
-/* 
-****************************************************************
-                Contact Me - Start - All Devices
-****************************************************************
-*/
-
-#contactMe {
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
-    margin-top: 60rem;
-}
-
-.contact {
-    font-size: 3.5rem;
-}
-
-.contact-me-container {
-    text-align: center;
-    height: 100vh;
-    color: black;
-    margin-bottom: 5rem;
-}
-
-.contact-me-text {
-    height: 100%;
+.container-yoga-classes {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-content: center;
+    gap: 5rem;
+}
+
+.container-yoga-classes .container-reveal {
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
+}
+
+.container-yoga-classes .container-reveal:first-of-type {
+    margin-top: 10rem;
+}
+
+.container-yoga-classes .container-reveal:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.container-yoga-classes h5 {
+    margin-top: 1rem;
+}
+
+.container-yoga-classes a {
+    letter-spacing: 1.75px;
+    font-weight: bold;
+    margin-top: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.container-yoga-classes a:hover {
+    font-weight: bold;
+    color: var(--secondary-colour);
+    background-color: var(--tertiary-colour);
+    transition: ease-in-out 0.5s;
+}
+
+.container-yoga-course {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.container-yoga-course p:first-of-type {
+    margin-top: 2rem;
+}
+
+.container-yoga-course p {
+    margin-bottom: 1rem;
+}
+
+.container-yoga-workshops {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.container-yoga-workshops p:first-of-type {
+    margin-top: 2rem;
+}
+
+.container-yoga-workshops p {
+    margin-bottom: 1rem;
+}
+
+/* Contact Me */
+.container-contact-me {
+    width: 100vw;
+}
+
+.container-contact-me form {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2.5rem;
 }
 
-.bi-instagram > a {
-    text-decoration: none;
+.container-contact-me input {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 16rem;
 }
 
-@media (max-width: 768px) {
-    .contact-me-text {
-        font-size: 1.5rem;
-    }
+.container-contact-me textarea {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* 
-****************************************************************
-                Contact Me - End - All Devices
-****************************************************************
-*/
+.container-contact-me button {
+    margin-bottom: 3rem;
+    letter-spacing: 1.75px;
+    font-weight: bold;
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-/* 
-****************************************************************
-                Footer - All Devices
-****************************************************************
-*/
+.container-contact-me button:hover {
+    color: var(--secondary-colour);
+    background-color: var(--tertiary-colour);
+    transition: ease-in-out 0.5s;
+}
+
+/* Footer */
 
 .footer {
     height: 15vh;
@@ -819,50 +687,185 @@ About Me - Start - All Devices ********************************************** */
     font-weight: 400;
 }
 
-@media (max-width: 768px) {
-    .fa-spa {
-        font-size: 10rem;
+/* Submit Form Page */
+.email-submit {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-submit div {
+    font-size: 3rem;
+}
+
+/* 
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+MEDIA QUERIES
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+*/
+
+@media (min-width: 768px) {
+    /* Navigation Bar */
+    .navigation-links {
+        text-align: center;
+        font-size: 1.8rem;
     }
 
-    #aboutMe {
+    .navigation-links .fa-chevron-down {
+        font-size: 0.8rem;
+    }
+
+    .navigation-links li {
+        font-size: 1.3rem;
+    }
+
+    /* Carousel */
+    .carousel-container {
+        width: 90vw;
         height: 75vh;
     }
 
-    .about-me {
+    .carousel-container .carousel .slider .slide h1 {
+        font-size: 4rem;
+        width: fit-content;
+        top: 25rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-container .carousel .slider .slide h3 {
+        width: fit-content;
+        font-size: 2rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controls .arrow .h-chevron-left,
+    .h-chevron-right {
         font-size: 2rem;
     }
 
-    .about-me-paragraph {
-        font-size: 1.5rem;
+    /* About Me */
+    .navigation-heading {
+        font-size: 4rem;
     }
 
-    #massage {
-        margin-top: 25rem;
-        height: 75vh;
+    .container-about-me,
+    .container-massage-info p {
+        font-size: 1.7rem;
     }
 
-    .massage {
+    /* Massage Info */
+    .container-massage-info {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    .massage-card-front,
+    .massage-card-back {
+        letter-spacing: 2px;
+    }
+
+    /* Massage Price */
+    .container-massage-price-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-massage-price {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discount-box {
+        margin-top: 0;
         font-size: 2rem;
     }
 
-    #priceList {
-        height: 90vh;
+    .container-booking-info a {
+        font-size: 1.7rem;
     }
 
-    #yoga {
-        height: 75vh;
+    .address a,
+    p {
+        font-size: 1.7rem;
     }
 
-    .yoga {
-        font-size: 2rem;
+    .container-yoga .yoga-img {
+        height: 100vh;
     }
 
-    #contact {
-        height: 85vh;
+    .container-yoga-classes h5 {
+        font-size: 1.8rem;
     }
 
-    .contact {
-        padding-top: 3rem;
-        font-size: 2rem;
+    .container-contact-me form {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .carousel-container {
+        width: 95vw;
+    }
+
+    .container-types-of-massage {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.2rem;
+    }
+
+    .container-reviews {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .review:nth-child(1) {
+        grid-column: 1 / 6;
+        grid-row: 1 / 4;
+    }
+
+    .review:nth-child(2) {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .review:nth-child(3) {
+        grid-column: 2 / 8;
+        grid-row: 5 / 8;
+    }
+
+    .review:nth-child(4) {
+        grid-column: 4 / 6;
+        grid-row: 4 / 5;
+    }
+
+    .review:nth-child(5) {
+        grid-column: 6 / 9;
+        grid-row: 1 / 5;
+    }
+
+    .container-yoga {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-yoga-course {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
