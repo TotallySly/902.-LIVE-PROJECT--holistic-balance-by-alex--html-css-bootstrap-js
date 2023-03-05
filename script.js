@@ -74,7 +74,7 @@ chevronMenuMassage.addEventListener('click', () => {
 
     if (!dropDownMenuMassage.classList.contains('display-none')) {
         chevronMenuMassage.addEventListener('click', () => {
-            dropDownMenuMassage.classList.add('display-none')
+            dropDownMenuMassage.classList.toggle('display-none')
         })
     }
 })
