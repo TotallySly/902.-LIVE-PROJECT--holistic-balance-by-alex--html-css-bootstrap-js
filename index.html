@@ -1,487 +1,442 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Scott Lyon" />
-        <meta
-            name="description"
-            content="Holistic Balance by Alex - The website that offers massage and yoga to improve your way of life holistically"
-        />
-        <!--FontAwesome Icons-->
+        <!--Hicon Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coswise/hicon-css@latest/web-fonts/hicon.min.css" />
+        <!--Font Awesome Icons-->
         <script src="https://kit.fontawesome.com/9e646e3165.js" crossorigin="anonymous"></script>
         <!--Favicon Icons-->
         <link rel="icon" href="/assets/favicon/favicon-yoga.png" type="image/x-icon" />
-        <!--Boostrap Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
         <!-- Bootstrap CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-        <!-- My CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+        <!--CSS-->
         <link rel="stylesheet" href="style.css" />
-
         <title>Holistic Balance By Alex</title>
     </head>
-
-
-
-    <body>  
-        <!-- 
-**************************************************************
-                    Nav Bar - Start - All Devices
-**************************************************************
--->
-
-        <nav class="navbar sticky-top">
-            <a class="navbar-brand" href="#home" id="home">
-                <span class="navbar-brand-bigger-letter">H</span><span>olistic</span> <span class="navbar-brand-bigger-letter">B</span><span>alance</span>
-                <div class="slogan">By Alex</div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav nav-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" id="home">
-                            <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                Hem
-                            </span>
+    <body>
+        <section class="container-navigation">
+            <nav class="navigation-bar fixed-top">
+                <div class="row">
+                    <div class="col-9">
+                        <a href="#" class="logo">
+                            <span>H</span>
+                            <span>olistic</span>
+                            <span>B</span>
+                            <span>alance</span>
+                            <div>
+                                <div>By Alex</div>
+                            </div>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#aboutMe">
-                            <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                Om
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="  >Massage</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#massage">
-                                    <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                    Massagebehandlingar
-                                    </span>
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="#priceList"><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                    Prislista
-                                    </span></a></li>
-                            <li><a class="dropdown-item" href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank"><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                    Boka
-                                    </span></a></li>
+                    </div>
+                    <div class="col-3">
+                        <div class="hamburger-container d-sm-none">
+                            <button class="hamburger-control">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button class="hamburger-control">
+                                <i class="fa-solid fa-x display-none"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row navigation-links">
+                    <div class="col-sm"><a href="#" id="home">Hem</a></div>
+                    <div class="col-sm"><a href="#aboutMe">Om</a></div>
+                    <div class="col-sm">
+                        <div>
+                            <a href="#massage">Massage</a>
+                            <button>
+                                <i class="fa-solid fa-chevron-down nav-massage"></i>
+                            </button>
+                        </div>
+                        <ul class="smaller-menu-items-massage display-none">
+                            <li><a href="#massageType">Massagebehandlinger</a></li>
+                            <li><a href="#massagePrice">Prislista</a></li>
+                            <li><a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank"">Boka</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#yoga">
-                            <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                Yoga
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#contactMe"><span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                Kontakt
-                            </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Shop</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                    </div>
+                    <div class="col-sm">
+                        <div>
+                            <a href="#yoga">Yoga</a>
+                            <button>
+                                <i class="fa-solid fa-chevron-down nav-yoga"></i>
+                            </button>
+                        </div>
+                        <ul class="smaller-menu-items-yoga display-none">
+                            <li><a href="#yogaClasses">Öppna Klasser</a></li>
+                            <li><a href="#yogaCourse">Kurser</a></li>
+                            <li><a href="#yogaWorkshop">Workshop/Event</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm"><a href="#contactMe">Kontakt</a></div>
+                </div>
+            </nav>
+        </section>
 
-
-        <div class="carousel-container text-center">
-            <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
-                <!-- Inside Carousel Content-->
-                <div class="carousel-inner">
-                    <!--Carousel One-->
-                    <div class="carousel-item active" data-interval="1000">
-                        <div class="masthead-one">
-                            <div class="overlay">
-                                <h1 class="d-none d-md-block">Diplomerad massör</h1>
-                                <p>Svensk klassisk massage, triggerpunktsbehandling och gravidmassage</p>
-                            </div>
+        <section class="container-fluid extra-container">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="slide">
+                            <h1>Diplomerad massör</h1>
+                            <h3>Svensk klassisk massage, triggerpunktsbehandling och gravidmassage</h3>
+                            <div class="carousel-slide-img-one"></div>
+                        </div>
+                        <div class="slide">
+                            <h1>Diplomerad Yogalärare</h1>
+                            <h3>Enligt Yoga Alliance och Global Yoga standard</h3>
+                            <div class="carousel-slide-img-two"></div>
                         </div>
                     </div>
-                    <!--Carousel Two-->
-                    <div class="carousel-item" data-interval="1000">
-                        <div class="masthead-one masthead-two">
-                            <div class="overlay">
-                                <h1 class="d-none d-md-block">Diplomerad Yogalärare</h1>
-                                <p>Enligt Yoga Alliance och Global Yoga standard</p>
-                            </div>
+                    <div class="controls">
+                        <span class="arrow left">
+                            <i class="h h-chevron-left"></i>
+                        </span>
+                        <span class="arrow right">
+                            <i class="h h-chevron-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal">
+                Välkommen till
+                <br />
+                Holistic Balance By Alex!
+            </h1>
+        </section>
+
+        <section class="container">
+            <div class="container-about-me" id="aboutMe">
+                <picture class="reveal">
+                    <img src="assets/website-images/alex-in-bamboo-seat.png" alt="" width="450px" height="100%" class="fluid-sizing" />
+                </picture>
+                <div class="container-reveal reveal">
+                    <p>
+                        Jag är diplomerad massör och yogalärare som håller till i Göteborg. Både i mitt jobb som massör och yogalärare försöker jag att alltid se helheten och inte bara ”problemområdet”. Min önskan är att ge dig utrymmet att få landa
+                        och andas ut, öka flexibiliteten i kroppen och lindra smärta som kan uppstå från stela muskler.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="massage">Massagebehandlingar</h1>
+        </section>
+
+        <section class="container">
+            <div class="container-massage-info">
+                <p class="container-reveal reveal">Har du stela muskler som resulterat i att du känner dig mindre rörlig?</p>
+                <p class="container-reveal reveal">Får du ofta spänningshuvudvärk?</p>
+                <p class="container-reveal reveal">Då är du varmt välkommen på massagebehandling på <a href="https://fysiohuset.se/" target="_blank">Fysiohuset</a> i Johanneberg!</p>
+                <p class="container-reveal reveal">
+                    Jag utför klassisk svensk massage på utvalda problemområden eller helkroppsmassage - du väljer själv. Efter konsultation får du antingen en mjukare avslappningsmassage eller med inslag av triggerpunktsbehandling utefter dina
+                    behov.
+                </p>
+                <p class="container-reveal reveal">
+                    Hit är du även välkommen på gravidmassage under hela din graviditet. Du kan antingen ligga på mage med hjälp av anpassade kuddar eller så får du ligga på sidan beroende på vad du tycker är mest bekvämt.
+                </p>
+            </div>
+            <div class="container-types-of-massage">
+                <div class="massage-card-container" id="massageType">
+                    <div class="massage-card reveal">
+                        <div class="massage-card-front">Klassisk Massage</div>
+                        <div class="massage-card-back">
+                            En klassisk massage som anpassas efter vad du behöver just nu. Det kan vara inslag av avslappningsmassage och triggerpunktsmassage. Kommunikation om hur du känner dig i stunden är det som gör en behandling optimal.
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-                    <span><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-                    <span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
 
-        <div id="aboutMe">
-            <i class="reveal fa-solid fa-spa"></i>
-        </div>
-
-        <div class="about-me cursive-text text-center reveal">Välkommen till Holistic Balance By Alex!</div>
-
-        <section>
-            <div class="about-me-container">
-                <img src="assets/website-images/alex-in-bamboo-seat.png" alt="An image of the yoga teacher, Alex, sitting within a rounded bamboo seat in a rain forest." class="img-fluid rounded-3 reveal" height="500px" width="500px" />
-                <div class="about-me-paragraph reveal rounded-3 text-center" >
-                    Jag är diplomerad massör och yogalärare som håller till i Göteborg. Både i mitt jobb som massör och yogalärare försöker jag att alltid se helheten och inte bara ”problemområdet”. Min önskan är att ge dig utrymmet att få landa och andas ut, öka flexibiliteten i kroppen och lindra smärta som kan uppstå från stela muskler.
+                <div class="massage-card-container">
+                    <div class="massage-card reveal">
+                        <div class="massage-card-front">Gravidmassage</div>
+                        <div class="massage-card-back">
+                            Gravidmassage för trötta höfter, rygg och axlar är magiskt! Ofta går det att ligga på mage med stöttning av särskilda kuddar, men det går också bra att ligga på sidan och självklart anpassar vi efter hur just du behöver ha
+                            det.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-
-        <div id="massage">
-            <i class="reveal fa-solid fa-spa"></i>
-        </div>
-
-        <div class="massage cursive-text text-center reveal">Massagebehandlingar</div>
-        
-
-
-        <!--
-*********************************************************************
-                    Massage - Start - All Devices
-*********************************************************************
--->
-        <section class="container text-center">
-            <div class="row reveal">
-                <div class="col">
-                    <div class="massage-text text-container reveal">Har du stela muskler som resulterat i att du känner dig mindre rörlig?</div>
-                    <div class="massage-text text-container rounded-3 reveal">Får du ofta spänningshuvudvärk?</div>
-                    <div class="massage-text text-container rounded-3 reveal">Känner du att du aldrig riktigt får landa i kroppen och sinnet på grund av stress?</div>
-                    <div class="massage-text text-container rounded-3 reveal">Då är du varmt välkommen på massagebehandling på <a href="https://fysiohuset.se/" target="_blank">Fysiohuset</a> i Johanneberg!</div>
-                    <div class="massage-block-text text-container rounded-3 reveal">
-                        <p>
-                            Jag utför klassisk svensk massage på utvalda problemområden eller helkroppsmassage - du väljer själv. Efter konsultation får du antingen en mjukare avslappningsmassage eller med inslag av triggerpunktsbehandling utefter dina
-                        behov.
-                        </p>
-                        <p>
-                            Hit är du även välkommen på gravidmassage under hela din graviditet. Du kan antingen ligga på mage med hjälp av anpassade kuddar eller så får du ligga på sidan beroende på vad du tycker är mest bekvämt.
-                        </p>
+                <div class="massage-card-container">
+                    <div class="massage-card reveal">
+                        <div class="massage-card-front">Triggerpunktsmassage</div>
+                        <div class="massage-card-back">En massage där fokus ligger på att hitta triggerpunkter i musklerna för att få musklerna att slappna av och släppa på spänningarna. Målet är att du ska få mindre smärta efteråt.</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="massage-cards-container container reveal">
-            <div class="massage-card-container">
-                <div class="massage-card">
-                    <div class="massage-card-front rounded-3">Klassisk Massage</div>
-                    <div class="massage-card-back rounded-3">
-                        <p>En klassisk massage som anpassas efter vad du behöver just nu. Det kan vara inslag av avslappningsmassage och triggerpunktsmassage. Kommunikation om hur du känner dig i stunden är det som gör en behandling optimal.</p>
-                    </div>
+
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal">Reviews</h1>
+        </section>
+
+        <section class="container-fluid container-reviews">
+            <div class="review reveal">
+                <div class="container-reveal">
+                    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p>
+                        "Jag är så nöjd med mitt besök! Alexandra var så välkomnande och lyssnade verkligen på mina behov. Var hård där jag behövde det men samtidigt mjuk och lugn och fick mig att slappna av. Jag kände mig så trygg och omhändertagen!
+                        Kommer verkligen besöka henne igen."
+                    </p>
                 </div>
             </div>
-            <div class="massage-card-container">
-                <div class="massage-card rounded-3">
-                    <div class="massage-card-front rounded-3">Gravidmassage</div>
-                    <div class="massage-card-back rounded-3">
-                        Gravidmassage för trötta höfter, rygg och axlar är magiskt! Ofta går det att ligga på mage med stöttning av särskilda kuddar, men det går också bra att ligga på sidan och självklart anpassar vi efter hur just du behöver ha
-                        det.
-                    </div>
+            <div class="review reveal">
+                <div class="container-reveal">
+                    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p>"Fantastiskt bra massage! Bästa rygg/skuldermassage på länge 🙌🏼"</p>
                 </div>
             </div>
-            <div class="massage-card-container">
-                <div class="massage-card rounded-3">
-                    <div class="massage-card-front rounded-3">Triggerpunktsmassage</div>
-                    <div class="massage-card-back rounded-3">En massage där fokus ligger på att hitta triggerpunkter i musklerna för att få musklerna att slappna av och släppa på spänningarna. Målet är att du ska få mindre smärta efteråt.</div>
+            <div class="review reveal">
+                <div class="container-reveal">
+                    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p>"Absolutely amazing massage. The trigger point massage really helped out my upper back pain. Very warm, welcoming, friendly and knowledgeable. Highly recommended!"</p>
+                </div>
+            </div>
+            <div class="review reveal">
+                <div class="container-reveal">
+                    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p>"Wow va skönt!"</p>
+                </div>
+            </div>
+            <div class="review reveal">
+                <div class="container-reveal">
+                    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <p>
+                        "Mitt första besök hos Alexandra som var väldigt mån om att min behandling uppfyllde mina behov. Vi gick kort igenom mina besvär och hon frågade en del om mitt jobb och vad jag gör på fritiden för att få en uppfattning på vad
+                        mina besvär beror på. Min behandling var en mix av klassisk massage och punktmassage på muskler och muskelfästen som jag har besvär med. Gick därifrån som en ny man!"
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!--
-                *********************************************************************
-                                Massage Price / Booking / Contact Info -- Start
-                *********************************************************************
-                -->
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="massagePrice">Prislista</h1>
+        </section>
 
-        <div id="priceList">
-            <i class="reveal fa-solid fa-spa"></i>
-        </div>
-
-        <section class="btm-massage-img">
-            <div class="btm-massage-img-blend"></div>
-            <div class="row massage-info-container">
-                <div class="col-sm price-box-container reveal">
-                    <div class="price-box rounded-3">
-                        <h1>40 Minuter</h1>
-                        <h2>650kr</h2>
+        <section class="massage-img-background">
+            <div class="massage-img-background-blend">
+                <div class="container-massage-price-info reveal">
+                    <div class="container-massage-price">
+                        <div class="massage-price">
+                            <h1>40 Minuter</h1>
+                            <h2>650kr</h2>
+                        </div>
+                        <div class="massage-price">
+                            <h1>60 Minuter</h1>
+                            <h2>850kr</h2>
+                        </div>
+                        <div class="massage-price">
+                            <h1>80 Minuter</h1>
+                            <h2>1050kr</h2>
+                        </div>
                     </div>
-                    <div class="price-box rounded-3">
-                        <h1>60 Minuter</h1>
-                        <h2>850kr</h2>
+                    <div class="discount-box">
+                        <p>!!! Every 6th Massage recieve a 20% discount !!!</p>
                     </div>
-                    <div class="price-box rounded-3">
-                        <h1>80 Minuter</h1>
-                        <h2>1050kr</h2>
+                    <div class="container-booking-info">
+                        <a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank">Boka din behandling här</a>
                     </div>
-                </div>
-                <div class="col-sm book-me-container">
-                    <div class="book-me-box reveal">
-                        <a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank" class="btn">Boka din behandling här</a>
-                    </div>
-                </div>
-                <div class="address-card-container container">
-                    <div class="address-box rounded-3 reveal">
+                    <div class="address container-reveal">
                         <div><a href="https://fysiohuset.se/" target="_blank">Fysiohuset</a></div>
-                        <div>Gibraltargatan 3, Göteborg, 412 58</div>
-                        <div>info@holisticbalancebyalex.se</div>
+                        <p>Gibraltargatan 3, Göteborg, 412 58</p>
+                        <p>info@holisticbalancebyalex.se</p>
                         <div><a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank">Boka din behandling här</a></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--
-            *********************************************************************
-                            Massage Price / Booking / Contact Info -- End
-            *********************************************************************
-            -->
-
-        <!--
-*********************************************************************
-                    Massage - End - All Devices
-*********************************************************************
--->
-
-        <!--
-*********************************************************************
-                    YOGA Navigation ID - Start - All Devices
-*********************************************************************
--->
-
-        <div id="yoga">
-            <i class="reveal fa-solid fa-spa"></i>
-        </div>
-
-        <div class="yoga cursive-text text-center reveal">Yoga</div>
-
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="yoga">Yoga</h1>
+        </section>
 
         <section class="container">
             <div class="row">
-                <div class="yoga-img-container col-md reveal">
+                <div class="container-yoga col-lg reveal">
                     <div class="yoga-img rounded-3"></div>
                 </div>
-                <div class="col-md yoga-text-container">
-                    <div class="text-container reveal rounded-3">
-                        <div>I flera år levde jag med daglig ångest, depression och utmattning. När kroppen och hjärnan tillslut sa stopp och jag vände mig till yogan. Jag hoppades att yogan skulle hjälpa mig hantera min stress och ångest, men vad jag hittade var så mycket djupare. Jag hittade vägen hem till mig själv.</div>
-                    </div>
-                    <div class="text-container reveal rounded-3">
-                        <div>
-                            Vägen hem till sig själv kan vara lång och snårig men tillsammans tar vi ett steg i taget. Ibland behöver man till och med sakta ner och ta ett steg tillbaka för att ge sig själv en chans att ta sig framåt. Genom mjuka rörelser, meditation och andningsövningar kan vi hitta inre stillhet och lugn. Att vända inåt och bemöta sig själv och sina känslor på ett ickedömande sätt, med tålamod och självmedkänsla är en kärleksförklaring som vi behöver och förtjänar. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--*********************************************************************
-                    Yoga Classes - Start - All Devices
-                 *********************************************************************
-                -->
-        <section class="yoga-classes-container">
-            <div class="btm-yoga-img">
-                <div class="btm-yoga-img-blend"></div>
-                <div class="yoga-box-container">
-                    <div class="col-lg card rounded-3 reveal">
-                        <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
-                        <div class="card-body">
-                            <h5 class="card-title">Måndagar - 19.50</h5>
-                            <p class="card-text">
-                                Vinyasa / Slow Flow
-                                <br />
-                                Fitness24Seven, Kungsgatan.
-                            </p>
-                            <a href="https://se.fitness24seven.com/" class="btn" target="_blank">Fitness24Seven</a>
-                        </div>
-                    </div>
-                    <div class="col-lg card reveal">
-                        <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
-                        <div class="card-body">
-                            <h5 class="card-title">Lördagar - 12.15</h5>
-                            <p class="card-text">
-                                Vinyasa / Slow Flow
-                                <br />
-                                Fitness24Seven, Kungsgatan
-                            </p>
-                            <a href="https://se.fitness24seven.com/" class="btn" target="_blank">Fitness24Seven</a>
-                        </div>
-                    </div>
-                    <div class="col-lg card reveal">
-                        <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
-                        <div class="card-body">
-                            <h5 class="card-title">Söndagar - 10.00</h5>
-                            <p class="card-text">
-                                Vinyasa / Slow Flow
-                                <br />
-                                Fitness24Seven, Ullevi
-                            </p>
-                            <a href="https://se.fitness24seven.com/" class="btn" target="_blank">Fitness24Seven</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--
-                 *********************************************************************
-                    Yoga Classes - Start - All Devices
-                 *********************************************************************
-                -->
-
-        <!-- 
-        **************************************************************
-                            Yoga - End - All Devices
-        **************************************************************
--->
-
-        <!--
-*********************************************************************
-            EVENTS Navigation ID- Start - All Devices
-*********************************************************************
--->
-
-        <div class="row d-none">
-            <div class="col reveal headingTitle" id="events">Events</div>
-        </div>
-
-        <!--
-*********************************************************************
-            EVENTS Navigation ID - End - All Devices
-*********************************************************************
--->
-
-        <!--
-*********************************************************************
-            Events - End - All Devices
-*********************************************************************
--->
-
-        
-
-        <section class="container events-container">
-            <div class="cursive-text special-workshop-header reveal">Special Workshops</div>
-            <div class="row reveal">
-                <div class="col-lg"><img src="/assets/website-images/alex-sunset-pose.jpg" alt="" class="rounded-3 img-fluid"></div>
-                <div class="col-lg text-container rounded-3">
-                    
-                    <div>
+                <div class="container-yoga col-lg">
+                    <div class="container-reveal reveal">
                         <p>
-
-                            Välkommen till en eftermiddag i stillhetens tecken med yin yoga & soundbath den 5/2 14:00
+                            I flera år levde jag med daglig ångest, depression och utmattning. När kroppen och hjärnan tillslut sa stopp och jag vände mig till yogan. Jag hoppades att yogan skulle hjälpa mig hantera min stress och ångest, men vad jag
+                            hittade var så mycket djupare. Jag hittade vägen hem till mig själv.
                         </p>
-<p>
-Yinyoga är en passiv form av yoga som hämtat sina principer från den traditionella kinesiska medicinen. När vi praktiserar yinyoga håller vi positionerna 3-5 minuter med lätt och mjuk strech. Väl inne i positionerna fokuserar vi på andningen och låter gravitationen göra sitt jobb. I yin yogan är målet att mjuka upp bindväven men det har även god effekt för att få musklerna att slappna av och öka rörligheten.
-</p>
-<p>
-Samtidigt som Alexandra vägleder i de olika positinerna, klangar Sanaz på sina klang/kristallskålar. I den djupa avslappningen går klangskålarnas vibration på cellnivå, genom hela kroppen, alla organ. Vibrationerna ger din kropp inre massage och hjälper spänningar att släppa.
-Varmt välkomna till en eftermiddag för avslappning, stillhet och djup läkning för kropp&själ.
-</p>
-
                     </div>
-                    <p>
-                        Max antal 11 pers. 
-                        <br>
-                        Boka din plats genom att skicka ett mejl till info@holisticbalancebyalex.se
-                        <br>
-                        Datum 5/2 14:00-15:00
-                        <br>
-                        Kostnad 250kr (swishas på plats)
-                        <br>
-                        Avbokning 24 tim innan
-                    </p>
-
+                    <div class="container-reveal reveal">
+                        <p>
+                            Vägen hem till sig själv kan vara lång och snårig men tillsammans tar vi ett steg i taget. Ibland behöver man till och med sakta ner och ta ett steg tillbaka för att ge sig själv en chans att ta sig framåt. Genom mjuka
+                            rörelser, meditation och andningsövningar kan vi hitta inre stillhet och lugn. Att vända inåt och bemöta sig själv och sina känslor på ett ickedömande sätt, med tålamod och självmedkänsla är en kärleksförklaring som vi
+                            behöver och förtjänar.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--
-*********************************************************************
-            Events - End - All Devices
-*********************************************************************
--->
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="yogaClasses">Öppna Klasser</h1>
+        </section>
 
-        <!--
-*********************************************************************
-            CONTACT ME Navigation ID- Start - All Devices
-*********************************************************************
--->
-        
-        <div id="contactMe">
-            <i class="reveal fa-solid fa-spa"></i>
-        </div>
-
-        <div class="contact cursive-text text-center reveal">Kontakt</div>
-
-        <!--
-*********************************************************************
-    CONTACT ME ID - End - All Devices
-*********************************************************************
--->
-
-        <!--
-*********************************************************************
-            Contact Me - Start- All Devices
-*********************************************************************
--->
-
-        <section class="container contact-me-container reveal">
-            <div class="row contact-me-text">???
-                <div class="col-sm contact-me-text">
-                    <div class="text-container rounded-3 reveal bi-calendar-event"> - 
-                        <a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank">Boka din behandling här</a>
+        <section class="btm-yoga-img">
+            <div class="btm-yoga-img-blend"></div>
+            <div class="container container-yoga-classes">
+                <div class="container-reveal reveal">
+                    <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
+                    <div>
+                        <h5>Måndagar - 19.50</h5>
+                        <p>
+                            Vinyasa / Slow Flow
+                            <br />
+                            Fitness24Seven, Kungsgatan.
+                        </p>
+                        <a href="assets/website-images/fitness247-logo.png" class="btn" target="_blank">Fitness24Seven</a>
                     </div>
-                    <div class="text-container rounded-3 reveal bi-instagram">
-                        <a href="https://www.instagram.com/holisticbalance.byalex/" target="_blank"> - holisticbalance.byalex</a>
+                </div>
+                <div class="container-reveal reveal">
+                    <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
+                    <div>
+                        <h5>Lördagar - 12.15</h5>
+                        <p>
+                            Vinyasa / Slow Flow
+                            <br />
+                            Fitness24Seven, Kungsgatan
+                        </p>
+                        <a href="https://se.fitness24seven.com/" class="btn" target="_blank">Fitness24Seven</a>
                     </div>
-                    <div class="text-container rounded-3 reveal">
-                        <i class="fa-regular fa-envelope"></i> - 
-                        info@holisiticbalancebyalex.se
+                </div>
+                <div class="container-reveal reveal">
+                    <img src="assets/website-images/fitness247-logo.png" class="img-fluid" alt="Logo for the gym Fitness 24 7" width="125rem" />
+                    <div>
+                        <h5>Söndagar - 10.00</h5>
+                        <p>
+                            Vinyasa / Slow Flow
+                            <br />
+                            Fitness24Seven, Ullevi
+                        </p>
+                        <a href="https://se.fitness24seven.com/" class="btn" target="_blank">Fitness24Seven</a>
                     </div>
+                </div>
             </div>
         </section>
 
-        <!--
-*********************************************************************
-            Contact Me - End - All Devices
-*********************************************************************
--->
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="yogaCourse">Kurser</h1>
+        </section>
 
-        <!--
-*********************************************************************
-            Footer - Start - All Devices
-*********************************************************************
--->
+        <section class="container">
+            <div class="container-yoga-course">
+                <div class="yoga-course-one container-reveal reveal">
+                    <h1>Grundkurs yoga 6 veckor med start 7/3</h1>
+                    <p>
+                        Är du <span>nyfiken</span> på Yoga?
+                        <br />
+                        Då är du välkommen på en nybörjarkurs på Fysiohuset!
+                        <br />
+                    </p>
+                    <p>
+                        Den här kursen passar dig som är helt ny men även dig som kanske har praktiserat ett tag och vill djupdyka ner i de grundläggande teknikerna med noggran assistering. I lugnt tempo går vi igenom några av de mest förekommande
+                        positionerna som man stöter på i <span>Hatha</span>, <span>Ashtanga</span> och <span>Vinyasa-yoga</span>. Vid det första tillfället kommer vi fokusera på solhälsningen. Därefter bygger vi vidare med stående, sittande och
+                        liggande positioner, t.ex krigare, sittande twist och happy baby.
+                    </p>
+                    <p>
+                        Kursens syfte är dels att lära sig hur positionerna skall utföras för att få ut mest av din tid på mattan, men även hur vi kan anpassa positionerna för att dom ska passa varje individs kropp. Alla kroppar ser olika ut och
+                        fungerar på olika sätt. Det finns ingen ”one size fits all” inom yogan! Inga förkunskaper krävs, du behöver inte vara vig eller känna att du ska prestera. Allt som behövs är en nyfikenhet och ett öppet sinne. Tillsammans gör
+                        vi kursen lättsam och rolig för alla!
+                    </p>
+                    <p>
+                        Vi ses varje tisdag kväll kl 19:00 med start 28/2. Anmäl dig genom att maila till info@fysiohuset.se Anmälan är bindande, din plats är garanterad efter att betalning kommit in via fakturan du får per mail efter du anmält dig.
+                    </p>
+                </div>
+                <div class="yoga-course-two container-reveal reveal">
+                    <h1>Stressreducerande yoga 6 veckor med start 7/3</h1>
+                    <p>När vi har en inre stress resulterar det ofta i en stel kropp, spända käkar och huvudvärk.</p>
+                    <p>Stress kan även leda till ett negativt tankemönster, det blir som en ond cirkel.</p>
+                    <p>
+                        Under dessa 6 veckor kommer vi röra oss mjukt, öva på medveten andning och avslappning. Vi kommer även jobba med självmedkänsla. Klassernas uppbyggnad grundar sig i slow flow och yin yoga, två stilar som tillåter återhämtning
+                        och full närvaro i nuet. Inga förkunskaper krävs, kom precis som du är!
+                    </p>
+                    <p>
+                        Vi ses varje tisdag kväll kl 17:30 med start 28/2. Anmäl dig genom att maila till info@fysiohuset.se Anmälan är bindande, din plats är garanterad efter att betalning kommit in via fakturan du får per mail efter du anmält dig.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="yogaWorkshop">Workshop / Events</h1>
+        </section>
+
+        <section class="container">
+            <div class="container-yoga-workshops">
+                <div class="yoga-workshop container-reveal reveal">
+                    <p>
+                        Kommer snart..... 
+                    </p>    
+                    <div class="display-none">
+                        <p>Välkommen till en eftermiddag i stillhetens tecken med yin yoga & soundbath den 5/2 14:00</p>
+                        <p>
+                            Yinyoga är en passiv form av yoga som hämtat sina principer från den traditionella kinesiska medicinen. När vi praktiserar yinyoga håller vi positionerna 3-5 minuter med lätt och mjuk strech. Väl inne i positionerna fokuserar
+                            vi på andningen och låter gravitationen göra sitt jobb. I yin yogan är målet att mjuka upp bindväven men det har även god effekt för att få musklerna att slappna av och öka rörligheten.
+                        </p>
+
+                        <p>
+                            Samtidigt som Alexandra vägleder i de olika positinerna, klangar Sanaz på sina klang/kristallskålar. I den djupa avslappningen går klangskålarnas vibration på cellnivå, genom hela kroppen, alla organ. Vibrationerna ger din
+                            kropp inre massage och hjälper spänningar att släppa. Varmt välkomna till en eftermiddag för avslappning, stillhet och djup läkning för kropp&själ.
+                        </p>
+                        <p>
+                            Max antal 11 pers.
+                            <br />
+                            Boka din plats genom att skicka ett mejl till info@holisticbalancebyalex.se
+                            <br />
+                            Datum 5/2 14:00-15:00
+                            <br />
+                            Kostnad 250kr (swishas på plats)
+                            <br />
+                            Avbokning 24 tim innan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <h1 class="navigation-heading reveal" id="contactMe">Kontakt Mig</h1>
+        </section>
+
+        <section class="container container-contact-me">
+            <form action="https://formsubmit.co/info@holisiticbalancebyalex.se" method="POST">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email Address" required'>
+                <!-- <input type="text" name="message" placeholder="Message" required /> -->
+                <textarea name="message" id="" cols="60" rows="5" placeholder="Message" required></textarea>
+                <input type="hidden" name="_subject" value="New submission!" />
+                <input type="hidden" name="_next" value="https://holisticbalancebyalex.se/pages/tack.html" />
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
         <section class="container-fluid">
             <div class="row footer">
                 <div class="col footer-logo-container">
-                    <img src="assets/website-images/website-logo.png" alt="" width="150rem" class="img-fluid">
+                    <img src="assets/website-images/website-logo.png" alt="" width="150rem" class="img-fluid" />
                 </div>
                 <div class="col footer-contacts">
                     <div>
                         <div><i class="fa-regular fa-envelope"></i></div>
-                            info@holisiticbalancebyalex.se
+                        info@holisiticbalancebyalex.se
                     </div>
-                    <div class="bi-instagram">
-                        <div><a href="https://www.instagram.com/holisticbalance.byalex/" target="_blank">holisticbalance.byalex</a>
-                        </div>
+                    <div>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <div><a href="https://www.instagram.com/holisticbalance.byalex/" target="_blank">holisticbalance.byalex</a></div>
                     </div>
-                    <div class="bi-calendar-event">
-                        <div><a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank">Boka din behandling här</a>
-                        </div>
+                    <div>
+                        <span><i class="fa-regular fa-calendar"></i></span>
+                        <div><a href="https://www.bokadirekt.se/places/holistic-balance-by-alex-49771" target="_blank">Boka din behandling här</a></div>
                     </div>
                 </div>
                 <div class="col d-none d-md-block">
@@ -490,23 +445,9 @@ Varmt välkomna till en eftermiddag för avslappning, stillhet och djup läkning
                     </div>
                 </div>
             </div>
-        </div>
-
         </section>
 
-
-        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <!--Script-->
         <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
-
 </html>
-
-
-<!--
-    TODO
-
-1). LINK THE NAV BAR LINKS
-2). ADD PRESENTION TEXT WHEN APPLICANT HAS COMPLETED IT
-3). CHECK THAT THE NEW TEXT WORKS WELL WITH THE LAYOUT
--->
