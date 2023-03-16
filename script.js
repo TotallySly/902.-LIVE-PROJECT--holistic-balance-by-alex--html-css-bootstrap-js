@@ -11,6 +11,7 @@ const hamburgerOpen = document.querySelector('.fa-bars')
 const hamburgerClose = document.querySelector('.fa-x')
 const navigationLinks = document.querySelector('.navigation-links')
 const navigationBar = document.querySelector('.navigation-bar')
+let prevScrollPos = window.scrollY
 
 if (window.innerWidth < 575) {
     navigationLinks.classList.add('display-none')
@@ -89,6 +90,30 @@ chevronMenuYoga.addEventListener('click', () => {
         chevronMenuYoga.addEventListener('click', () => {
             dropDownMenuYoga.classList.toggle('display-none')
         })
+    }
+})
+
+window.addEventListener('scroll', () => {
+    const currentScollPos = window.scrollY
+
+    if (prevScrollPos > currentScollPos) {
+        navigationBar.classList.remove('display-none')
+    } else {
+        navigationBar.classList.add('display-none')
+    }
+
+    prevScrollPos = currentScollPos
+})
+
+navigationBar.addEventListener('mouseenter', () => {
+    navigationBar.classList.remove('display-none')
+})
+
+navigationBar.addEventListener('mouseleave', () => {
+    if (prevScrollPos > window.scrollY) {
+        navigationBar.classList.remove('hide')
+    } else {
+        navigationBar.classList.add('display-none')
     }
 })
 
