@@ -94,15 +94,15 @@ chevronMenuYoga.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-    const currentScollPos = window.scrollY
+    const currentScrollPos = window.scrollY
 
-    if (prevScrollPos > currentScollPos) {
+    if (prevScrollPos > currentScrollPos) {
         navigationBar.classList.remove('display-none')
     } else {
         navigationBar.classList.add('display-none')
     }
 
-    prevScrollPos = currentScollPos
+    prevScrollPos = currentScrollPos
 })
 
 navigationBar.addEventListener('mouseenter', () => {
@@ -111,7 +111,7 @@ navigationBar.addEventListener('mouseenter', () => {
 
 navigationBar.addEventListener('mouseleave', () => {
     if (prevScrollPos > window.scrollY) {
-        navigationBar.classList.remove('hide')
+        navigationBar.classList.remove('display-none')
     } else {
         navigationBar.classList.add('display-none')
     }
