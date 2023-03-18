@@ -118,6 +118,16 @@ navigationBar.addEventListener('mouseleave', () => {
 })
 
 /**
+ * Show Modal on Load
+ */
+
+const myModal = new bootstrap.Modal('#promo-modal')
+
+window.addEventListener('DOMContentLoaded', () => {
+    myModal.show()
+})
+
+/**
  * CAROUSEL
  */
 
